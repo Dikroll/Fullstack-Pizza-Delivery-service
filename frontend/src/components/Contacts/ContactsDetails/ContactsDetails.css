@@ -1,0 +1,38 @@
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Gilroy';
+}
+
+.contacts-info h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: #000;
+
+}
+
+.contacts-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info-item {
+  margin-bottom: 20px;
+}
+
+.contact-info-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-info-item strong {
+  font-weight: bold;
+}
+

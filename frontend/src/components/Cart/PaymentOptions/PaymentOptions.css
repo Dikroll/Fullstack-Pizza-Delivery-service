@@ -1,0 +1,19 @@
+.payment-options {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.payment-options h4 {
+    margin-bottom: 10px;
+}
+
+.payment-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-options input {
+    margin-right: 5px;
+}

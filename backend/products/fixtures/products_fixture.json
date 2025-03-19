@@ -1,0 +1,576 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Пицца",
+      "description": "Классическая итальянская пицца с различными начинками."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Суши",
+      "description": "Свежие суши, роллы и другие японские деликатесы."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Горячее",
+      "description": "Горячие блюда, такие как паста, стейки и другие."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "Напитки",
+      "description": "Освежающие напитки для любого вкуса."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "Десерты",
+      "description": "Сладкие блюда для завершения трапезы."
+    }
+  },
+
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Пепперони",
+      "description": "\"ОСТРО\". Соус томатный, сыр моцарелла, колбаса пепперони, сушёный базилик.",
+      "base_price": "300.00",
+      "image": "product_images/pepperoni.png",
+      "category": 1,
+      "base_ingredients": "\"ОСТРО\". Соус томатный, сыр моцарелла, колбаса пепперони, сушёный базилик.",
+      "grammas": 500
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "size": "25 см",
+      "price": "300.00"
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "size": "30 см",
+      "price": "400.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Маргарита",
+      "description": "Классическая пицца с томатным соусом, сыром моцарелла и базиликом.",
+      "base_price": "250.00",
+      "image": "product_images/pepperoni.png",
+      "category": 1,
+      "base_ingredients": "Соус томатный, сыр моцарелла, базилик.",
+      "grammas": 450
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 3,
+    "fields": {
+      "product": 2,
+      "size": "25 см",
+      "price": "250.00"
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "size": "30 см",
+      "price": "350.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Гавайская",
+      "description": "Пицца с ветчиной, ананасами и сыром моцарелла.",
+      "base_price": "330.00",
+      "image": "product_images/pepperoni.png",
+      "category": 1,
+      "base_ingredients": "Ветчина, ананасы, сыр моцарелла.",
+      "grammas": 480
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 5,
+    "fields": {
+      "product": 3,
+      "size": "25 см",
+      "price": "330.00"
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 6,
+    "fields": {
+      "product": 3,
+      "size": "30 см",
+      "price": "430.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Четыре сыра",
+      "description": "Пицца с четырьмя видами сыра.",
+      "base_price": "380.00",
+      "image": "product_images/pepperoni.png",
+      "category": 1,
+      "base_ingredients": "Моцарелла, пармезан, горгонзола, рикотта.",
+      "grammas": 520
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 7,
+    "fields": {
+      "product": 4,
+      "size": "25 см",
+      "price": "380.00"
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 8,
+    "fields": {
+      "product": 4,
+      "size": "30 см",
+      "price": "480.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Пицца с морепродуктами",
+      "description": "Пицца с морепродуктами, томатным соусом и сыром моцарелла.",
+      "base_price": "450.00",
+      "image": "product_images/pepperoni.png",
+      "category": 1,
+      "base_ingredients": "Морепродукты, томатный соус, сыр моцарелла.",
+      "grammas": 550
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 9,
+    "fields": {
+      "product": 5,
+      "size": "25 см",
+      "price": "450.00"
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 10,
+    "fields": {
+      "product": 5,
+      "size": "30 см",
+      "price": "550.00"
+    }
+  },
+
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Филадельфия",
+      "description": "Роллы с лососем, авокадо и огурцом.",
+      "base_price": "450.00",
+      "image": "product_images/pepperoni.png",
+      "category": 2,
+      "base_ingredients": "Лосось, авокадо, огурец.",
+      "grammas": 200
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 11,
+    "fields": {
+      "product": 6,
+      "size": "10 шт.",
+      "price": "450.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Калифорния",
+      "description": "Роллы с крабовым мясом, авокадо и огурцом.",
+      "base_price": "400.00",
+      "image": "product_images/pepperoni.png",
+      "category": 2,
+      "base_ingredients": "Крабовое мясо, авокадо, огурец.",
+      "grammas": 180
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 12,
+    "fields": {
+      "product": 7,
+      "size": "8 шт.",
+      "price": "400.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Тигровые роллы",
+      "description": "Роллы с тигровыми креветками и соусом терияки.",
+      "base_price": "480.00",
+      "image": "product_images/pepperoni.png",
+      "category": 2,
+      "base_ingredients": "Тигровые креветки, соус терияки.",
+      "grammas": 220
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 13,
+    "fields": {
+      "product": 8,
+      "size": "8 шт.",
+      "price": "480.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Роллы с угрём",
+      "description": "Роллы с угрём и авокадо.",
+      "base_price": "500.00",
+      "image": "product_images/pepperoni.png",
+      "category": 2,
+      "base_ingredients": "Угрь, авокадо.",
+      "grammas": 210
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 14,
+    "fields": {
+      "product": 9,
+      "size": "6 шт.",
+      "price": "500.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Терасси",
+      "description": "Суши с авокадо, угрём и креветками.",
+      "base_price": "550.00",
+      "image": "product_images/pepperoni.png",
+      "category": 2,
+      "base_ingredients": "Авокадо, угрь, креветки.",
+      "grammas": 230
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 15,
+    "fields": {
+      "product": 10,
+      "size": "6 шт.",
+      "price": "550.00"
+    }
+  },
+
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Спагетти Карбонара",
+      "description": "Спагетти с соусом карбонара, беконом и пармезаном.",
+      "base_price": "500.00",
+      "image": "product_images/pepperoni.png",
+      "category": 3,
+      "base_ingredients": "Спагетти, соус карбонара, бекон, пармезан.",
+      "grammas": 350
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 16,
+    "fields": {
+      "product": 11,
+      "size": "1 порция",
+      "price": "500.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Стейк с картошкой",
+      "description": "Стейк из говядины с гарниром из картофеля.",
+      "base_price": "700.00",
+      "image": "product_images/pepperoni.png",
+      "category": 3,
+      "base_ingredients": "Говядина, картофель.",
+      "grammas": 400
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 17,
+    "fields": {
+      "product": 12,
+      "size": "1 порция",
+      "price": "700.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "Паста Болоньезе",
+      "description": "Паста с мясным соусом болоньезе.",
+      "base_price": "550.00",
+      "image": "product_images/pepperoni.png",
+      "category": 3,
+      "base_ingredients": "Паста, мясной соус.",
+      "grammas": 380
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 18,
+    "fields": {
+      "product": 13,
+      "size": "1 порция",
+      "price": "550.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "Ризотто с морепродуктами",
+      "description": "Ризотто с морепродуктами в сливочном соусе.",
+      "base_price": "600.00",
+      "image": "product_images/pepperoni.png",
+      "category": 3,
+      "base_ingredients": "Ризотто, морепродукты, сливочный соус.",
+      "grammas": 420
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 19,
+    "fields": {
+      "product": 14,
+      "size": "1 порция",
+      "price": "600.00"
+    }
+  },
+
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Кока-Кола",
+      "description": "Газированный напиток Кока-Кола.",
+      "base_price": "100.00",
+      "image": "product_images/pepperoni.png",
+      "category": 4,
+      "base_ingredients": "Кола.",
+      "grammas": 500
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 20,
+    "fields": {
+      "product": 15,
+      "size": "0.5 л",
+      "price": "100.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "Сок апельсиновый",
+      "description": "Свежевыжатый апельсиновый сок.",
+      "base_price": "120.00",
+      "image": "product_images/pepperoni.png",
+      "category": 4,
+      "base_ingredients": "Апельсин.",
+      "grammas": 500
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 21,
+    "fields": {
+      "product": 16,
+      "size": "0.5 л",
+      "price": "120.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "Минеральная вода",
+      "description": "Газа или без газа.",
+      "base_price": "80.00",
+      "image": "product_images/pepperoni.png",
+      "category": 4,
+      "base_ingredients": "Вода.",
+      "grammas": 500
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 22,
+    "fields": {
+      "product": 17,
+      "size": "0.5 л",
+      "price": "80.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "Чай",
+      "description": "Зеленый или черный чай.",
+      "base_price": "70.00",
+      "image": "product_images/pepperoni.png",
+      "category": 4,
+      "base_ingredients": "Чай.",
+      "grammas": 250
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 23,
+    "fields": {
+      "product": 18,
+      "size": "1 порция",
+      "price": "70.00"
+    }
+  },
+
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Тирамису",
+      "description": "Итальянский десерт с маскарпоне и кофе.",
+      "base_price": "150.00",
+      "image": "product_images/pepperoni.png",
+      "category": 5,
+      "base_ingredients": "Маскарпоне, кофе.",
+      "grammas": 150
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 24,
+    "fields": {
+      "product": 19,
+      "size": "1 порция",
+      "price": "150.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Чизкейк",
+      "description": "Десерт с кремом из сыра и ягодами.",
+      "base_price": "180.00",
+      "image": "product_images/pepperoni.png",
+      "category": 5,
+      "base_ingredients": "Сыр, ягоды.",
+      "grammas": 200
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 25,
+    "fields": {
+      "product": 20,
+      "size": "1 порция",
+      "price": "180.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "name": "Мусс шоколадный",
+      "description": "Шоколадный мусс с взбитыми сливками.",
+      "base_price": "170.00",
+      "image": "product_images/pepperoni.png",
+      "category": 5,
+      "base_ingredients": "Шоколад, сливки.",
+      "grammas": 180
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 26,
+    "fields": {
+      "product": 21,
+      "size": "1 порция",
+      "price": "170.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "name": "Панна котта",
+      "description": "Итальянский десерт на основе сливок.",
+      "base_price": "160.00",
+      "image": "product_images/pepperoni.png",
+      "category": 5,
+      "base_ingredients": "Сливки.",
+      "grammas": 170
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 27,
+    "fields": {
+      "product": 22,
+      "size": "1 порция",
+      "price": "160.00"
+    }
+  }
+]

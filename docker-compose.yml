@@ -1,0 +1,59 @@
+services:
+  db:
+    container_name: postgres_db
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "postgres"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - main_network
+
+  backend:
+    build:
+      context: ./backend
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"  
+    volumes:
+      - ./backend:/app
+      - static_volume:/app/static
+      - media_volume:/app/media
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379/1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_NAME=postgres
+    container_name: backend
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+    networks:
+      - main_network
+
+  node:
+    build:
+      context: ./frontend
+    command: npm run dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  node_modules:
+  media_volume:
+  static_volume:
+
+networks:
+  main_network:

@@ -1,0 +1,40 @@
+/* Контейнер страницы */
+.contact-page {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  height: 100vh; 
+  padding: 20px; 
+  background-color: #fafafa;
+}
+
+
+.contact-content {
+  flex: 1; 
+  padding: 20px;
+  background-color: #fafafa;
+  height: 100%; 
+}
+
+
+.contact-map {
+  flex: 1; 
+  height: 100%; 
+  padding: 0; 
+  position: relative; 
+}
+
+
+.contact-map .leaflet-container {
+  height: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column; 
+  }
+
+  .contact-content, .contact-map {
+    flex: 1 1 100%; 
+  }
+}

@@ -1,0 +1,61 @@
+.profile-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form .form-group {
+  margin-bottom: 15px;
+}
+
+.profile-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  border-color: #ffb342;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 179, 66, 0.5);
+}
+
+.profile-form input:disabled {
+  background: #f5f5f5;
+  color: #888;
+}
+
+.profile-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ffb342;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-form button:hover {
+  background: #e89a2e;
+}
+
+.profile-form button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
