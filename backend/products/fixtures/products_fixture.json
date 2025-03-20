@@ -39,7 +39,6 @@
       "description": "Сладкие блюда для завершения трапезы."
     }
   },
-
   {
     "model": "products.product",
     "pk": 1,
@@ -47,10 +46,9 @@
       "name": "Пепперони",
       "description": "\"ОСТРО\". Соус томатный, сыр моцарелла, колбаса пепперони, сушёный базилик.",
       "base_price": "300.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 1,
-      "base_ingredients": "\"ОСТРО\". Соус томатный, сыр моцарелла, колбаса пепперони, сушёный базилик.",
-      "grammas": 500
+      "base_ingredients": "\"ОСТРО\". Соус томатный, сыр моцарелла, колбаса пепперони, сушёный базилик."
     }
   },
   {
@@ -59,7 +57,8 @@
     "fields": {
       "product": 1,
       "size": "25 см",
-      "price": "300.00"
+      "price": "300.00",
+      "grammas": 500
     }
   },
   {
@@ -68,7 +67,8 @@
     "fields": {
       "product": 1,
       "size": "30 см",
-      "price": "400.00"
+      "price": "400.00",
+      "grammas": 500
     }
   },
   {
@@ -78,10 +78,9 @@
       "name": "Маргарита",
       "description": "Классическая пицца с томатным соусом, сыром моцарелла и базиликом.",
       "base_price": "250.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 1,
-      "base_ingredients": "Соус томатный, сыр моцарелла, базилик.",
-      "grammas": 450
+      "base_ingredients": "Соус томатный, сыр моцарелла, базилик."
     }
   },
   {
@@ -90,7 +89,8 @@
     "fields": {
       "product": 2,
       "size": "25 см",
-      "price": "250.00"
+      "price": "250.00",
+      "grammas": 450
     }
   },
   {
@@ -99,7 +99,8 @@
     "fields": {
       "product": 2,
       "size": "30 см",
-      "price": "350.00"
+      "price": "350.00",
+      "grammas": 450
     }
   },
   {
@@ -109,10 +110,9 @@
       "name": "Гавайская",
       "description": "Пицца с ветчиной, ананасами и сыром моцарелла.",
       "base_price": "330.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 1,
-      "base_ingredients": "Ветчина, ананасы, сыр моцарелла.",
-      "grammas": 480
+      "base_ingredients": "Ветчина, ананасы, сыр моцарелла."
     }
   },
   {
@@ -121,7 +121,8 @@
     "fields": {
       "product": 3,
       "size": "25 см",
-      "price": "330.00"
+      "price": "330.00",
+      "grammas": 480
     }
   },
   {
@@ -130,7 +131,8 @@
     "fields": {
       "product": 3,
       "size": "30 см",
-      "price": "430.00"
+      "price": "430.00",
+      "grammas": 480
     }
   },
   {
@@ -140,10 +142,9 @@
       "name": "Четыре сыра",
       "description": "Пицца с четырьмя видами сыра.",
       "base_price": "380.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 1,
-      "base_ingredients": "Моцарелла, пармезан, горгонзола, рикотта.",
-      "grammas": 520
+      "base_ingredients": "Моцарелла, пармезан, горгонзола, рикотта."
     }
   },
   {
@@ -152,7 +153,8 @@
     "fields": {
       "product": 4,
       "size": "25 см",
-      "price": "380.00"
+      "price": "380.00",
+      "grammas": 520
     }
   },
   {
@@ -161,7 +163,8 @@
     "fields": {
       "product": 4,
       "size": "30 см",
-      "price": "480.00"
+      "price": "480.00",
+      "grammas": 520
     }
   },
   {
@@ -171,10 +174,9 @@
       "name": "Пицца с морепродуктами",
       "description": "Пицца с морепродуктами, томатным соусом и сыром моцарелла.",
       "base_price": "450.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 1,
-      "base_ingredients": "Морепродукты, томатный соус, сыр моцарелла.",
-      "grammas": 550
+      "base_ingredients": "Морепродукты, томатный соус, сыр моцарелла."
     }
   },
   {
@@ -183,7 +185,8 @@
     "fields": {
       "product": 5,
       "size": "25 см",
-      "price": "450.00"
+      "price": "450.00",
+      "grammas": 550
     }
   },
   {
@@ -192,10 +195,10 @@
     "fields": {
       "product": 5,
       "size": "30 см",
-      "price": "550.00"
+      "price": "550.00",
+      "grammas": 550
     }
   },
-
   {
     "model": "products.product",
     "pk": 6,
@@ -203,10 +206,9 @@
       "name": "Филадельфия",
       "description": "Роллы с лососем, авокадо и огурцом.",
       "base_price": "450.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 2,
-      "base_ingredients": "Лосось, авокадо, огурец.",
-      "grammas": 200
+      "base_ingredients": "Лосось, авокадо, огурец."
     }
   },
   {
@@ -215,7 +217,8 @@
     "fields": {
       "product": 6,
       "size": "10 шт.",
-      "price": "450.00"
+      "price": "450.00",
+      "grammas": 200
     }
   },
   {
@@ -225,10 +228,9 @@
       "name": "Калифорния",
       "description": "Роллы с крабовым мясом, авокадо и огурцом.",
       "base_price": "400.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 2,
-      "base_ingredients": "Крабовое мясо, авокадо, огурец.",
-      "grammas": 180
+      "base_ingredients": "Крабовое мясо, авокадо, огурец."
     }
   },
   {
@@ -237,7 +239,8 @@
     "fields": {
       "product": 7,
       "size": "8 шт.",
-      "price": "400.00"
+      "price": "400.00",
+      "grammas": 180
     }
   },
   {
@@ -247,10 +250,9 @@
       "name": "Тигровые роллы",
       "description": "Роллы с тигровыми креветками и соусом терияки.",
       "base_price": "480.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 2,
-      "base_ingredients": "Тигровые креветки, соус терияки.",
-      "grammas": 220
+      "base_ingredients": "Тигровые креветки, соус терияки."
     }
   },
   {
@@ -259,7 +261,8 @@
     "fields": {
       "product": 8,
       "size": "8 шт.",
-      "price": "480.00"
+      "price": "480.00",
+      "grammas": 220
     }
   },
   {
@@ -269,10 +272,9 @@
       "name": "Роллы с угрём",
       "description": "Роллы с угрём и авокадо.",
       "base_price": "500.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 2,
-      "base_ingredients": "Угрь, авокадо.",
-      "grammas": 210
+      "base_ingredients": "Угрь, авокадо."
     }
   },
   {
@@ -281,7 +283,8 @@
     "fields": {
       "product": 9,
       "size": "6 шт.",
-      "price": "500.00"
+      "price": "500.00",
+      "grammas": 210
     }
   },
   {
@@ -291,10 +294,9 @@
       "name": "Терасси",
       "description": "Суши с авокадо, угрём и креветками.",
       "base_price": "550.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 2,
-      "base_ingredients": "Авокадо, угрь, креветки.",
-      "grammas": 230
+      "base_ingredients": "Авокадо, угрь, креветки."
     }
   },
   {
@@ -303,10 +305,10 @@
     "fields": {
       "product": 10,
       "size": "6 шт.",
-      "price": "550.00"
+      "price": "550.00",
+      "grammas": 230
     }
   },
-
   {
     "model": "products.product",
     "pk": 11,
@@ -314,10 +316,9 @@
       "name": "Спагетти Карбонара",
       "description": "Спагетти с соусом карбонара, беконом и пармезаном.",
       "base_price": "500.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 3,
-      "base_ingredients": "Спагетти, соус карбонара, бекон, пармезан.",
-      "grammas": 350
+      "base_ingredients": "Спагетти, соус карбонара, бекон, пармезан."
     }
   },
   {
@@ -326,7 +327,8 @@
     "fields": {
       "product": 11,
       "size": "1 порция",
-      "price": "500.00"
+      "price": "500.00",
+      "grammas": 350
     }
   },
   {
@@ -336,10 +338,9 @@
       "name": "Стейк с картошкой",
       "description": "Стейк из говядины с гарниром из картофеля.",
       "base_price": "700.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 3,
-      "base_ingredients": "Говядина, картофель.",
-      "grammas": 400
+      "base_ingredients": "Говядина, картофель."
     }
   },
   {
@@ -348,7 +349,8 @@
     "fields": {
       "product": 12,
       "size": "1 порция",
-      "price": "700.00"
+      "price": "700.00",
+      "grammas": 400
     }
   },
   {
@@ -358,10 +360,9 @@
       "name": "Паста Болоньезе",
       "description": "Паста с мясным соусом болоньезе.",
       "base_price": "550.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 3,
-      "base_ingredients": "Паста, мясной соус.",
-      "grammas": 380
+      "base_ingredients": "Паста, мясной соус."
     }
   },
   {
@@ -370,7 +371,8 @@
     "fields": {
       "product": 13,
       "size": "1 порция",
-      "price": "550.00"
+      "price": "550.00",
+      "grammas": 380
     }
   },
   {
@@ -380,10 +382,9 @@
       "name": "Ризотто с морепродуктами",
       "description": "Ризотто с морепродуктами в сливочном соусе.",
       "base_price": "600.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 3,
-      "base_ingredients": "Ризотто, морепродукты, сливочный соус.",
-      "grammas": 420
+      "base_ingredients": "Ризотто, морепродукты, сливочный соус."
     }
   },
   {
@@ -392,10 +393,10 @@
     "fields": {
       "product": 14,
       "size": "1 порция",
-      "price": "600.00"
+      "price": "600.00",
+      "grammas": 420
     }
   },
-
   {
     "model": "products.product",
     "pk": 15,
@@ -403,10 +404,9 @@
       "name": "Кока-Кола",
       "description": "Газированный напиток Кока-Кола.",
       "base_price": "100.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 4,
-      "base_ingredients": "Кола.",
-      "grammas": 500
+      "base_ingredients": "Кола."
     }
   },
   {
@@ -415,7 +415,8 @@
     "fields": {
       "product": 15,
       "size": "0.5 л",
-      "price": "100.00"
+      "price": "100.00",
+      "grammas": 500
     }
   },
   {
@@ -425,10 +426,9 @@
       "name": "Сок апельсиновый",
       "description": "Свежевыжатый апельсиновый сок.",
       "base_price": "120.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 4,
-      "base_ingredients": "Апельсин.",
-      "grammas": 500
+      "base_ingredients": "Апельсин."
     }
   },
   {
@@ -437,7 +437,8 @@
     "fields": {
       "product": 16,
       "size": "0.5 л",
-      "price": "120.00"
+      "price": "120.00",
+      "grammas": 500
     }
   },
   {
@@ -447,10 +448,9 @@
       "name": "Минеральная вода",
       "description": "Газа или без газа.",
       "base_price": "80.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 4,
-      "base_ingredients": "Вода.",
-      "grammas": 500
+      "base_ingredients": "Вода."
     }
   },
   {
@@ -459,7 +459,8 @@
     "fields": {
       "product": 17,
       "size": "0.5 л",
-      "price": "80.00"
+      "price": "80.00",
+      "grammas": 500
     }
   },
   {
@@ -469,10 +470,9 @@
       "name": "Чай",
       "description": "Зеленый или черный чай.",
       "base_price": "70.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 4,
-      "base_ingredients": "Чай.",
-      "grammas": 250
+      "base_ingredients": "Чай."
     }
   },
   {
@@ -481,10 +481,10 @@
     "fields": {
       "product": 18,
       "size": "1 порция",
-      "price": "70.00"
+      "price": "70.00",
+      "grammas": 250
     }
   },
-
   {
     "model": "products.product",
     "pk": 19,
@@ -492,10 +492,9 @@
       "name": "Тирамису",
       "description": "Итальянский десерт с маскарпоне и кофе.",
       "base_price": "150.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 5,
-      "base_ingredients": "Маскарпоне, кофе.",
-      "grammas": 150
+      "base_ingredients": "Маскарпоне, кофе."
     }
   },
   {
@@ -504,7 +503,8 @@
     "fields": {
       "product": 19,
       "size": "1 порция",
-      "price": "150.00"
+      "price": "150.00",
+      "grammas": 150
     }
   },
   {
@@ -514,10 +514,9 @@
       "name": "Чизкейк",
       "description": "Десерт с кремом из сыра и ягодами.",
       "base_price": "180.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 5,
-      "base_ingredients": "Сыр, ягоды.",
-      "grammas": 200
+      "base_ingredients": "Сыр, ягоды."
     }
   },
   {
@@ -526,7 +525,8 @@
     "fields": {
       "product": 20,
       "size": "1 порция",
-      "price": "180.00"
+      "price": "180.00",
+      "grammas": 200
     }
   },
   {
@@ -536,10 +536,9 @@
       "name": "Мусс шоколадный",
       "description": "Шоколадный мусс с взбитыми сливками.",
       "base_price": "170.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 5,
-      "base_ingredients": "Шоколад, сливки.",
-      "grammas": 180
+      "base_ingredients": "Шоколад, сливки."
     }
   },
   {
@@ -548,7 +547,8 @@
     "fields": {
       "product": 21,
       "size": "1 порция",
-      "price": "170.00"
+      "price": "170.00",
+      "grammas": 180
     }
   },
   {
@@ -558,10 +558,9 @@
       "name": "Панна котта",
       "description": "Итальянский десерт на основе сливок.",
       "base_price": "160.00",
-      "image": "product_images/pepperoni.png",
+      "image": "",
       "category": 5,
-      "base_ingredients": "Сливки.",
-      "grammas": 170
+      "base_ingredients": "Сливки."
     }
   },
   {
@@ -570,7 +569,3860 @@
     "fields": {
       "product": 22,
       "size": "1 порция",
-      "price": "160.00"
+      "price": "160.00",
+      "grammas": 170
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+      "name": "Салаты",
+      "description": "Свежие овощные и мясные салаты."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+      "name": "Закуски",
+      "description": "Легкие закуски для любого случая."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+      "name": "Супы",
+      "description": "Горячие и холодные супы."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+      "name": "Бургеры",
+      "description": "Сочные бургеры с различными начинками."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+      "name": "Хот-доги",
+      "description": "Вкусные хот-доги с разными соусами."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+      "name": "Шашлыки",
+      "description": "Мясо и овощи, приготовленные на гриле."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+      "name": "Морепродукты",
+      "description": "Блюда из свежих морепродуктов."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
+      "name": "Веганские блюда",
+      "description": "Полностью растительные блюда."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 14,
+    "fields": {
+      "name": "Завтраки",
+      "description": "Полезные и вкусные завтраки."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "name": "Цезарь",
+      "description": "Вкусное блюдо: Цезарь.",
+      "base_price": "422.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "name": "Греческий",
+      "description": "Вкусное блюдо: Греческий.",
+      "base_price": "301.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "name": "Оливье",
+      "description": "Вкусное блюдо: Оливье.",
+      "base_price": "709.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "name": "Мимоза",
+      "description": "Вкусное блюдо: Мимоза.",
+      "base_price": "584.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "name": "Винегрет",
+      "description": "Вкусное блюдо: Винегрет.",
+      "base_price": "530.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "name": "Сельдь под шубой",
+      "description": "Вкусное блюдо: Сельдь под шубой.",
+      "base_price": "326.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "name": "Тёплый с курицей",
+      "description": "Вкусное блюдо: Тёплый с курицей.",
+      "base_price": "364.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+      "name": "Крабовый",
+      "description": "Вкусное блюдо: Крабовый.",
+      "base_price": "657.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "name": "Фруктовый",
+      "description": "Вкусное блюдо: Фруктовый.",
+      "base_price": "261.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "name": "С тунцом",
+      "description": "Вкусное блюдо: С тунцом.",
+      "base_price": "497.00",
+      "image": "",
+      "category": 6,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "name": "Картофель фри",
+      "description": "Вкусное блюдо: Картофель фри.",
+      "base_price": "766.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "name": "Начос",
+      "description": "Вкусное блюдо: Начос.",
+      "base_price": "461.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "name": "Крылышки BBQ",
+      "description": "Вкусное блюдо: Крылышки BBQ.",
+      "base_price": "599.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+      "name": "Сырные палочки",
+      "description": "Вкусное блюдо: Сырные палочки.",
+      "base_price": "377.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+      "name": "Луковые кольца",
+      "description": "Вкусное блюдо: Луковые кольца.",
+      "base_price": "699.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+      "name": "Хлебная корзина",
+      "description": "Вкусное блюдо: Хлебная корзина.",
+      "base_price": "624.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+      "name": "Брускетта",
+      "description": "Вкусное блюдо: Брускетта.",
+      "base_price": "239.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+      "name": "Фалафель",
+      "description": "Вкусное блюдо: Фалафель.",
+      "base_price": "427.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+      "name": "Тапас",
+      "description": "Вкусное блюдо: Тапас.",
+      "base_price": "240.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+      "name": "Мини-кебабы",
+      "description": "Вкусное блюдо: Мини-кебабы.",
+      "base_price": "454.00",
+      "image": "",
+      "category": 7,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+      "name": "Борщ",
+      "description": "Вкусное блюдо: Борщ.",
+      "base_price": "201.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+      "name": "Солянка",
+      "description": "Вкусное блюдо: Солянка.",
+      "base_price": "272.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+      "name": "Грибной крем-суп",
+      "description": "Вкусное блюдо: Грибной крем-суп.",
+      "base_price": "709.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+      "name": "Том Ям",
+      "description": "Вкусное блюдо: Том Ям.",
+      "base_price": "280.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+      "name": "Рамен",
+      "description": "Вкусное блюдо: Рамен.",
+      "base_price": "774.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+      "name": "Куриный бульон",
+      "description": "Вкусное блюдо: Куриный бульон.",
+      "base_price": "438.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+      "name": "Щи",
+      "description": "Вкусное блюдо: Щи.",
+      "base_price": "528.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+      "name": "Уха",
+      "description": "Вкусное блюдо: Уха.",
+      "base_price": "203.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+      "name": "Гаспачо",
+      "description": "Вкусное блюдо: Гаспачо.",
+      "base_price": "429.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+      "name": "Мисо-суп",
+      "description": "Вкусное блюдо: Мисо-суп.",
+      "base_price": "590.00",
+      "image": "",
+      "category": 8,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+      "name": "Чизбургер",
+      "description": "Вкусное блюдо: Чизбургер.",
+      "base_price": "244.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+      "name": "Гамбургер",
+      "description": "Вкусное блюдо: Гамбургер.",
+      "base_price": "280.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+      "name": "Биг Бургер",
+      "description": "Вкусное блюдо: Биг Бургер.",
+      "base_price": "721.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+      "name": "Веган Бургер",
+      "description": "Вкусное блюдо: Веган Бургер.",
+      "base_price": "649.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+      "name": "Дабл Чиз",
+      "description": "Вкусное блюдо: Дабл Чиз.",
+      "base_price": "777.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+      "name": "Куриный Бургер",
+      "description": "Вкусное блюдо: Куриный Бургер.",
+      "base_price": "744.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+      "name": "Фиш Бургер",
+      "description": "Вкусное блюдо: Фиш Бургер.",
+      "base_price": "640.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+      "name": "Острый Бургер",
+      "description": "Вкусное блюдо: Острый Бургер.",
+      "base_price": "415.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+      "name": "Барбекю Бургер",
+      "description": "Вкусное блюдо: Барбекю Бургер.",
+      "base_price": "582.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 62,
+    "fields": {
+      "name": "Мясной Бургер",
+      "description": "Вкусное блюдо: Мясной Бургер.",
+      "base_price": "405.00",
+      "image": "",
+      "category": 9,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 63,
+    "fields": {
+      "name": "Классический",
+      "description": "Вкусное блюдо: Классический.",
+      "base_price": "570.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 64,
+    "fields": {
+      "name": "Чикагский",
+      "description": "Вкусное блюдо: Чикагский.",
+      "base_price": "442.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 65,
+    "fields": {
+      "name": "Нью-Йоркский",
+      "description": "Вкусное блюдо: Нью-Йоркский.",
+      "base_price": "446.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 66,
+    "fields": {
+      "name": "Техасский",
+      "description": "Вкусное блюдо: Техасский.",
+      "base_price": "650.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 67,
+    "fields": {
+      "name": "Чили-дог",
+      "description": "Вкусное блюдо: Чили-дог.",
+      "base_price": "331.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 68,
+    "fields": {
+      "name": "Сырный",
+      "description": "Вкусное блюдо: Сырный.",
+      "base_price": "738.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 69,
+    "fields": {
+      "name": "Бекон-дог",
+      "description": "Вкусное блюдо: Бекон-дог.",
+      "base_price": "685.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 70,
+    "fields": {
+      "name": "Грибной",
+      "description": "Вкусное блюдо: Грибной.",
+      "base_price": "269.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 71,
+    "fields": {
+      "name": "Дабл-дог",
+      "description": "Вкусное блюдо: Дабл-дог.",
+      "base_price": "776.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 72,
+    "fields": {
+      "name": "Мини-дог",
+      "description": "Вкусное блюдо: Мини-дог.",
+      "base_price": "360.00",
+      "image": "",
+      "category": 10,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 73,
+    "fields": {
+      "name": "Свиной",
+      "description": "Вкусное блюдо: Свиной.",
+      "base_price": "358.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 74,
+    "fields": {
+      "name": "Куриный",
+      "description": "Вкусное блюдо: Куриный.",
+      "base_price": "523.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 75,
+    "fields": {
+      "name": "Говяжий",
+      "description": "Вкусное блюдо: Говяжий.",
+      "base_price": "689.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 76,
+    "fields": {
+      "name": "Бараний",
+      "description": "Вкусное блюдо: Бараний.",
+      "base_price": "494.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 77,
+    "fields": {
+      "name": "Овощной",
+      "description": "Вкусное блюдо: Овощной.",
+      "base_price": "333.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 78,
+    "fields": {
+      "name": "Рыбный",
+      "description": "Вкусное блюдо: Рыбный.",
+      "base_price": "410.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 79,
+    "fields": {
+      "name": "Креветочный",
+      "description": "Вкусное блюдо: Креветочный.",
+      "base_price": "534.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 80,
+    "fields": {
+      "name": "Ассорти",
+      "description": "Вкусное блюдо: Ассорти.",
+      "base_price": "391.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 81,
+    "fields": {
+      "name": "Шашлык-гриль",
+      "description": "Вкусное блюдо: Шашлык-гриль.",
+      "base_price": "777.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 82,
+    "fields": {
+      "name": "Классический",
+      "description": "Вкусное блюдо: Классический.",
+      "base_price": "651.00",
+      "image": "",
+      "category": 11,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 83,
+    "fields": {
+      "name": "Лосось-гриль",
+      "description": "Вкусное блюдо: Лосось-гриль.",
+      "base_price": "427.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 84,
+    "fields": {
+      "name": "Креветки в соусе",
+      "description": "Вкусное блюдо: Креветки в соусе.",
+      "base_price": "624.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 85,
+    "fields": {
+      "name": "Мидии",
+      "description": "Вкусное блюдо: Мидии.",
+      "base_price": "272.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 86,
+    "fields": {
+      "name": "Кальмары",
+      "description": "Вкусное блюдо: Кальмары.",
+      "base_price": "701.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 87,
+    "fields": {
+      "name": "Тунец стейк",
+      "description": "Вкусное блюдо: Тунец стейк.",
+      "base_price": "297.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 88,
+    "fields": {
+      "name": "Осьминог",
+      "description": "Вкусное блюдо: Осьминог.",
+      "base_price": "552.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 89,
+    "fields": {
+      "name": "Раки",
+      "description": "Вкусное блюдо: Раки.",
+      "base_price": "417.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 90,
+    "fields": {
+      "name": "Форель",
+      "description": "Вкусное блюдо: Форель.",
+      "base_price": "445.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 91,
+    "fields": {
+      "name": "Крабовые ножки",
+      "description": "Вкусное блюдо: Крабовые ножки.",
+      "base_price": "539.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 92,
+    "fields": {
+      "name": "Фиш & Чипс",
+      "description": "Вкусное блюдо: Фиш & Чипс.",
+      "base_price": "391.00",
+      "image": "",
+      "category": 12,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 93,
+    "fields": {
+      "name": "Тофу стейк",
+      "description": "Вкусное блюдо: Тофу стейк.",
+      "base_price": "224.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 94,
+    "fields": {
+      "name": "Гречневая лапша",
+      "description": "Вкусное блюдо: Гречневая лапша.",
+      "base_price": "797.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 95,
+    "fields": {
+      "name": "Авокадо-тост",
+      "description": "Вкусное блюдо: Авокадо-тост.",
+      "base_price": "585.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 96,
+    "fields": {
+      "name": "Рис с овощами",
+      "description": "Вкусное блюдо: Рис с овощами.",
+      "base_price": "458.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 97,
+    "fields": {
+      "name": "Хумус",
+      "description": "Вкусное блюдо: Хумус.",
+      "base_price": "251.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 98,
+    "fields": {
+      "name": "Овощные котлеты",
+      "description": "Вкусное блюдо: Овощные котлеты.",
+      "base_price": "535.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 99,
+    "fields": {
+      "name": "Рататуй",
+      "description": "Вкусное блюдо: Рататуй.",
+      "base_price": "518.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 100,
+    "fields": {
+      "name": "Киноа-салат",
+      "description": "Вкусное блюдо: Киноа-салат.",
+      "base_price": "272.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 101,
+    "fields": {
+      "name": "Соевый гуляш",
+      "description": "Вкусное блюдо: Соевый гуляш.",
+      "base_price": "437.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 102,
+    "fields": {
+      "name": "Лапша удон",
+      "description": "Вкусное блюдо: Лапша удон.",
+      "base_price": "406.00",
+      "image": "",
+      "category": 13,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 103,
+    "fields": {
+      "name": "Омлет",
+      "description": "Вкусное блюдо: Омлет.",
+      "base_price": "271.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 104,
+    "fields": {
+      "name": "Каша овсяная",
+      "description": "Вкусное блюдо: Каша овсяная.",
+      "base_price": "471.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 105,
+    "fields": {
+      "name": "Тосты с джемом",
+      "description": "Вкусное блюдо: Тосты с джемом.",
+      "base_price": "583.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 106,
+    "fields": {
+      "name": "Яйцо Бенедикт",
+      "description": "Вкусное блюдо: Яйцо Бенедикт.",
+      "base_price": "560.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 107,
+    "fields": {
+      "name": "Сырники",
+      "description": "Вкусное блюдо: Сырники.",
+      "base_price": "556.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 108,
+    "fields": {
+      "name": "Панкейки",
+      "description": "Вкусное блюдо: Панкейки.",
+      "base_price": "233.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 109,
+    "fields": {
+      "name": "Бекон и яйца",
+      "description": "Вкусное блюдо: Бекон и яйца.",
+      "base_price": "221.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 110,
+    "fields": {
+      "name": "Французский тост",
+      "description": "Вкусное блюдо: Французский тост.",
+      "base_price": "210.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 111,
+    "fields": {
+      "name": "Гранола",
+      "description": "Вкусное блюдо: Гранола.",
+      "base_price": "749.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 112,
+    "fields": {
+      "name": "Шакшука",
+      "description": "Вкусное блюдо: Шакшука.",
+      "base_price": "362.00",
+      "image": "",
+      "category": 14,
+      "base_ingredients": "Различные ингредиенты."
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 28,
+    "fields": {
+      "product": 23,
+      "size": "Маленький",
+      "price": "559.00",
+      "grammas": 469
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 29,
+    "fields": {
+      "product": 23,
+      "size": "Средний",
+      "price": "495.00",
+      "grammas": 456
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 30,
+    "fields": {
+      "product": 23,
+      "size": "Большой",
+      "price": "572.00",
+      "grammas": 330
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 31,
+    "fields": {
+      "product": 24,
+      "size": "Маленький",
+      "price": "382.00",
+      "grammas": 647
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 32,
+    "fields": {
+      "product": 24,
+      "size": "Средний",
+      "price": "409.00",
+      "grammas": 225
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 33,
+    "fields": {
+      "product": 24,
+      "size": "Большой",
+      "price": "390.00",
+      "grammas": 341
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 34,
+    "fields": {
+      "product": 25,
+      "size": "Маленький",
+      "price": "835.00",
+      "grammas": 476
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 35,
+    "fields": {
+      "product": 25,
+      "size": "Средний",
+      "price": "903.00",
+      "grammas": 542
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 36,
+    "fields": {
+      "product": 25,
+      "size": "Большой",
+      "price": "895.00",
+      "grammas": 639
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 37,
+    "fields": {
+      "product": 26,
+      "size": "Маленький",
+      "price": "679.00",
+      "grammas": 305
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 38,
+    "fields": {
+      "product": 26,
+      "size": "Средний",
+      "price": "730.00",
+      "grammas": 243
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 39,
+    "fields": {
+      "product": 26,
+      "size": "Большой",
+      "price": "779.00",
+      "grammas": 446
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 40,
+    "fields": {
+      "product": 27,
+      "size": "Маленький",
+      "price": "623.00",
+      "grammas": 407
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 41,
+    "fields": {
+      "product": 27,
+      "size": "Средний",
+      "price": "683.00",
+      "grammas": 498
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 42,
+    "fields": {
+      "product": 27,
+      "size": "Большой",
+      "price": "603.00",
+      "grammas": 338
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 43,
+    "fields": {
+      "product": 28,
+      "size": "Маленький",
+      "price": "403.00",
+      "grammas": 211
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 44,
+    "fields": {
+      "product": 28,
+      "size": "Средний",
+      "price": "384.00",
+      "grammas": 408
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 45,
+    "fields": {
+      "product": 28,
+      "size": "Большой",
+      "price": "399.00",
+      "grammas": 279
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 46,
+    "fields": {
+      "product": 29,
+      "size": "Маленький",
+      "price": "533.00",
+      "grammas": 450
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 47,
+    "fields": {
+      "product": 29,
+      "size": "Средний",
+      "price": "498.00",
+      "grammas": 523
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 48,
+    "fields": {
+      "product": 29,
+      "size": "Большой",
+      "price": "468.00",
+      "grammas": 619
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 49,
+    "fields": {
+      "product": 30,
+      "size": "Маленький",
+      "price": "765.00",
+      "grammas": 514
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 50,
+    "fields": {
+      "product": 30,
+      "size": "Средний",
+      "price": "723.00",
+      "grammas": 695
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 51,
+    "fields": {
+      "product": 30,
+      "size": "Большой",
+      "price": "794.00",
+      "grammas": 177
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 52,
+    "fields": {
+      "product": 31,
+      "size": "Маленький",
+      "price": "363.00",
+      "grammas": 246
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 53,
+    "fields": {
+      "product": 31,
+      "size": "Средний",
+      "price": "444.00",
+      "grammas": 384
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 54,
+    "fields": {
+      "product": 31,
+      "size": "Большой",
+      "price": "369.00",
+      "grammas": 495
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 55,
+    "fields": {
+      "product": 32,
+      "size": "Маленький",
+      "price": "582.00",
+      "grammas": 339
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 56,
+    "fields": {
+      "product": 32,
+      "size": "Средний",
+      "price": "685.00",
+      "grammas": 658
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 57,
+    "fields": {
+      "product": 32,
+      "size": "Большой",
+      "price": "629.00",
+      "grammas": 402
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 58,
+    "fields": {
+      "product": 33,
+      "size": "Маленький",
+      "price": "887.00",
+      "grammas": 443
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 59,
+    "fields": {
+      "product": 33,
+      "size": "Средний",
+      "price": "890.00",
+      "grammas": 270
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 60,
+    "fields": {
+      "product": 33,
+      "size": "Большой",
+      "price": "843.00",
+      "grammas": 523
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 61,
+    "fields": {
+      "product": 34,
+      "size": "Маленький",
+      "price": "576.00",
+      "grammas": 566
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 62,
+    "fields": {
+      "product": 34,
+      "size": "Средний",
+      "price": "655.00",
+      "grammas": 263
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 63,
+    "fields": {
+      "product": 34,
+      "size": "Большой",
+      "price": "557.00",
+      "grammas": 657
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 64,
+    "fields": {
+      "product": 35,
+      "size": "Маленький",
+      "price": "743.00",
+      "grammas": 197
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 65,
+    "fields": {
+      "product": 35,
+      "size": "Средний",
+      "price": "723.00",
+      "grammas": 304
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 66,
+    "fields": {
+      "product": 35,
+      "size": "Большой",
+      "price": "762.00",
+      "grammas": 187
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 67,
+    "fields": {
+      "product": 36,
+      "size": "Маленький",
+      "price": "428.00",
+      "grammas": 650
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 68,
+    "fields": {
+      "product": 36,
+      "size": "Средний",
+      "price": "505.00",
+      "grammas": 359
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 69,
+    "fields": {
+      "product": 36,
+      "size": "Большой",
+      "price": "464.00",
+      "grammas": 375
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 70,
+    "fields": {
+      "product": 37,
+      "size": "Маленький",
+      "price": "793.00",
+      "grammas": 151
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 71,
+    "fields": {
+      "product": 37,
+      "size": "Средний",
+      "price": "811.00",
+      "grammas": 247
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 72,
+    "fields": {
+      "product": 37,
+      "size": "Большой",
+      "price": "812.00",
+      "grammas": 693
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 73,
+    "fields": {
+      "product": 38,
+      "size": "Маленький",
+      "price": "799.00",
+      "grammas": 500
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 74,
+    "fields": {
+      "product": 38,
+      "size": "Средний",
+      "price": "770.00",
+      "grammas": 241
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 75,
+    "fields": {
+      "product": 38,
+      "size": "Большой",
+      "price": "716.00",
+      "grammas": 599
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 76,
+    "fields": {
+      "product": 39,
+      "size": "Маленький",
+      "price": "307.00",
+      "grammas": 457
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 77,
+    "fields": {
+      "product": 39,
+      "size": "Средний",
+      "price": "339.00",
+      "grammas": 316
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 78,
+    "fields": {
+      "product": 39,
+      "size": "Большой",
+      "price": "353.00",
+      "grammas": 460
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 79,
+    "fields": {
+      "product": 40,
+      "size": "Маленький",
+      "price": "596.00",
+      "grammas": 692
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 80,
+    "fields": {
+      "product": 40,
+      "size": "Средний",
+      "price": "489.00",
+      "grammas": 588
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 81,
+    "fields": {
+      "product": 40,
+      "size": "Большой",
+      "price": "509.00",
+      "grammas": 494
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 82,
+    "fields": {
+      "product": 41,
+      "size": "Маленький",
+      "price": "335.00",
+      "grammas": 213
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 83,
+    "fields": {
+      "product": 41,
+      "size": "Средний",
+      "price": "336.00",
+      "grammas": 507
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 84,
+    "fields": {
+      "product": 41,
+      "size": "Большой",
+      "price": "360.00",
+      "grammas": 479
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 85,
+    "fields": {
+      "product": 42,
+      "size": "Маленький",
+      "price": "631.00",
+      "grammas": 420
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 86,
+    "fields": {
+      "product": 42,
+      "size": "Средний",
+      "price": "579.00",
+      "grammas": 587
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 87,
+    "fields": {
+      "product": 42,
+      "size": "Большой",
+      "price": "564.00",
+      "grammas": 171
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 88,
+    "fields": {
+      "product": 43,
+      "size": "Маленький",
+      "price": "337.00",
+      "grammas": 630
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 89,
+    "fields": {
+      "product": 43,
+      "size": "Средний",
+      "price": "366.00",
+      "grammas": 154
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 90,
+    "fields": {
+      "product": 43,
+      "size": "Большой",
+      "price": "379.00",
+      "grammas": 563
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 91,
+    "fields": {
+      "product": 44,
+      "size": "Маленький",
+      "price": "368.00",
+      "grammas": 291
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 92,
+    "fields": {
+      "product": 44,
+      "size": "Средний",
+      "price": "416.00",
+      "grammas": 341
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 93,
+    "fields": {
+      "product": 44,
+      "size": "Большой",
+      "price": "349.00",
+      "grammas": 198
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 94,
+    "fields": {
+      "product": 45,
+      "size": "Маленький",
+      "price": "831.00",
+      "grammas": 660
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 95,
+    "fields": {
+      "product": 45,
+      "size": "Средний",
+      "price": "807.00",
+      "grammas": 670
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 96,
+    "fields": {
+      "product": 45,
+      "size": "Большой",
+      "price": "763.00",
+      "grammas": 651
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 97,
+    "fields": {
+      "product": 46,
+      "size": "Маленький",
+      "price": "448.00",
+      "grammas": 627
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 98,
+    "fields": {
+      "product": 46,
+      "size": "Средний",
+      "price": "331.00",
+      "grammas": 452
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 99,
+    "fields": {
+      "product": 46,
+      "size": "Большой",
+      "price": "376.00",
+      "grammas": 204
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 100,
+    "fields": {
+      "product": 47,
+      "size": "Маленький",
+      "price": "949.00",
+      "grammas": 519
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 101,
+    "fields": {
+      "product": 47,
+      "size": "Средний",
+      "price": "864.00",
+      "grammas": 377
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 102,
+    "fields": {
+      "product": 47,
+      "size": "Большой",
+      "price": "850.00",
+      "grammas": 494
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 103,
+    "fields": {
+      "product": 48,
+      "size": "Маленький",
+      "price": "610.00",
+      "grammas": 323
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 104,
+    "fields": {
+      "product": 48,
+      "size": "Средний",
+      "price": "610.00",
+      "grammas": 245
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 105,
+    "fields": {
+      "product": 48,
+      "size": "Большой",
+      "price": "591.00",
+      "grammas": 268
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 106,
+    "fields": {
+      "product": 49,
+      "size": "Маленький",
+      "price": "604.00",
+      "grammas": 353
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 107,
+    "fields": {
+      "product": 49,
+      "size": "Средний",
+      "price": "687.00",
+      "grammas": 428
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 108,
+    "fields": {
+      "product": 49,
+      "size": "Большой",
+      "price": "705.00",
+      "grammas": 506
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 109,
+    "fields": {
+      "product": 50,
+      "size": "Маленький",
+      "price": "385.00",
+      "grammas": 646
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 110,
+    "fields": {
+      "product": 50,
+      "size": "Средний",
+      "price": "270.00",
+      "grammas": 622
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 111,
+    "fields": {
+      "product": 50,
+      "size": "Большой",
+      "price": "277.00",
+      "grammas": 602
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 112,
+    "fields": {
+      "product": 51,
+      "size": "Маленький",
+      "price": "615.00",
+      "grammas": 568
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 113,
+    "fields": {
+      "product": 51,
+      "size": "Средний",
+      "price": "606.00",
+      "grammas": 656
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 114,
+    "fields": {
+      "product": 51,
+      "size": "Большой",
+      "price": "536.00",
+      "grammas": 439
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 115,
+    "fields": {
+      "product": 52,
+      "size": "Маленький",
+      "price": "654.00",
+      "grammas": 151
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 116,
+    "fields": {
+      "product": 52,
+      "size": "Средний",
+      "price": "725.00",
+      "grammas": 155
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 117,
+    "fields": {
+      "product": 52,
+      "size": "Большой",
+      "price": "676.00",
+      "grammas": 648
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 118,
+    "fields": {
+      "product": 53,
+      "size": "Маленький",
+      "price": "374.00",
+      "grammas": 168
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 119,
+    "fields": {
+      "product": 53,
+      "size": "Средний",
+      "price": "304.00",
+      "grammas": 540
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 120,
+    "fields": {
+      "product": 53,
+      "size": "Большой",
+      "price": "395.00",
+      "grammas": 615
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 121,
+    "fields": {
+      "product": 54,
+      "size": "Маленький",
+      "price": "374.00",
+      "grammas": 377
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 122,
+    "fields": {
+      "product": 54,
+      "size": "Средний",
+      "price": "449.00",
+      "grammas": 397
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 123,
+    "fields": {
+      "product": 54,
+      "size": "Большой",
+      "price": "414.00",
+      "grammas": 371
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 124,
+    "fields": {
+      "product": 55,
+      "size": "Маленький",
+      "price": "871.00",
+      "grammas": 339
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 125,
+    "fields": {
+      "product": 55,
+      "size": "Средний",
+      "price": "803.00",
+      "grammas": 278
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 126,
+    "fields": {
+      "product": 55,
+      "size": "Большой",
+      "price": "821.00",
+      "grammas": 535
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 127,
+    "fields": {
+      "product": 56,
+      "size": "Маленький",
+      "price": "796.00",
+      "grammas": 182
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 128,
+    "fields": {
+      "product": 56,
+      "size": "Средний",
+      "price": "716.00",
+      "grammas": 310
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 129,
+    "fields": {
+      "product": 56,
+      "size": "Большой",
+      "price": "827.00",
+      "grammas": 332
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 130,
+    "fields": {
+      "product": 57,
+      "size": "Маленький",
+      "price": "946.00",
+      "grammas": 407
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 131,
+    "fields": {
+      "product": 57,
+      "size": "Средний",
+      "price": "921.00",
+      "grammas": 361
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 132,
+    "fields": {
+      "product": 57,
+      "size": "Большой",
+      "price": "935.00",
+      "grammas": 292
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 133,
+    "fields": {
+      "product": 58,
+      "size": "Маленький",
+      "price": "909.00",
+      "grammas": 588
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 134,
+    "fields": {
+      "product": 58,
+      "size": "Средний",
+      "price": "798.00",
+      "grammas": 574
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 135,
+    "fields": {
+      "product": 58,
+      "size": "Большой",
+      "price": "867.00",
+      "grammas": 166
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 136,
+    "fields": {
+      "product": 59,
+      "size": "Маленький",
+      "price": "820.00",
+      "grammas": 212
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 137,
+    "fields": {
+      "product": 59,
+      "size": "Средний",
+      "price": "805.00",
+      "grammas": 643
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 138,
+    "fields": {
+      "product": 59,
+      "size": "Большой",
+      "price": "790.00",
+      "grammas": 187
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 139,
+    "fields": {
+      "product": 60,
+      "size": "Маленький",
+      "price": "529.00",
+      "grammas": 493
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 140,
+    "fields": {
+      "product": 60,
+      "size": "Средний",
+      "price": "474.00",
+      "grammas": 343
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 141,
+    "fields": {
+      "product": 60,
+      "size": "Большой",
+      "price": "526.00",
+      "grammas": 295
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 142,
+    "fields": {
+      "product": 61,
+      "size": "Маленький",
+      "price": "770.00",
+      "grammas": 554
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 143,
+    "fields": {
+      "product": 61,
+      "size": "Средний",
+      "price": "731.00",
+      "grammas": 194
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 144,
+    "fields": {
+      "product": 61,
+      "size": "Большой",
+      "price": "775.00",
+      "grammas": 277
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 145,
+    "fields": {
+      "product": 62,
+      "size": "Маленький",
+      "price": "570.00",
+      "grammas": 682
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 146,
+    "fields": {
+      "product": 62,
+      "size": "Средний",
+      "price": "561.00",
+      "grammas": 277
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 147,
+    "fields": {
+      "product": 62,
+      "size": "Большой",
+      "price": "481.00",
+      "grammas": 662
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 148,
+    "fields": {
+      "product": 63,
+      "size": "Маленький",
+      "price": "624.00",
+      "grammas": 467
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 149,
+    "fields": {
+      "product": 63,
+      "size": "Средний",
+      "price": "635.00",
+      "grammas": 200
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 150,
+    "fields": {
+      "product": 63,
+      "size": "Большой",
+      "price": "653.00",
+      "grammas": 285
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 151,
+    "fields": {
+      "product": 64,
+      "size": "Маленький",
+      "price": "614.00",
+      "grammas": 667
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 152,
+    "fields": {
+      "product": 64,
+      "size": "Средний",
+      "price": "555.00",
+      "grammas": 555
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 153,
+    "fields": {
+      "product": 64,
+      "size": "Большой",
+      "price": "621.00",
+      "grammas": 317
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 154,
+    "fields": {
+      "product": 65,
+      "size": "Маленький",
+      "price": "538.00",
+      "grammas": 651
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 155,
+    "fields": {
+      "product": 65,
+      "size": "Средний",
+      "price": "565.00",
+      "grammas": 569
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 156,
+    "fields": {
+      "product": 65,
+      "size": "Большой",
+      "price": "549.00",
+      "grammas": 311
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 157,
+    "fields": {
+      "product": 66,
+      "size": "Маленький",
+      "price": "726.00",
+      "grammas": 454
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 158,
+    "fields": {
+      "product": 66,
+      "size": "Средний",
+      "price": "748.00",
+      "grammas": 429
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 159,
+    "fields": {
+      "product": 66,
+      "size": "Большой",
+      "price": "800.00",
+      "grammas": 570
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 160,
+    "fields": {
+      "product": 67,
+      "size": "Маленький",
+      "price": "476.00",
+      "grammas": 452
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 161,
+    "fields": {
+      "product": 67,
+      "size": "Средний",
+      "price": "445.00",
+      "grammas": 519
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 162,
+    "fields": {
+      "product": 67,
+      "size": "Большой",
+      "price": "411.00",
+      "grammas": 617
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 163,
+    "fields": {
+      "product": 68,
+      "size": "Маленький",
+      "price": "826.00",
+      "grammas": 688
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 164,
+    "fields": {
+      "product": 68,
+      "size": "Средний",
+      "price": "795.00",
+      "grammas": 322
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 165,
+    "fields": {
+      "product": 68,
+      "size": "Большой",
+      "price": "801.00",
+      "grammas": 274
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 166,
+    "fields": {
+      "product": 69,
+      "size": "Маленький",
+      "price": "802.00",
+      "grammas": 351
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 167,
+    "fields": {
+      "product": 69,
+      "size": "Средний",
+      "price": "885.00",
+      "grammas": 583
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 168,
+    "fields": {
+      "product": 69,
+      "size": "Большой",
+      "price": "742.00",
+      "grammas": 246
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 169,
+    "fields": {
+      "product": 70,
+      "size": "Маленький",
+      "price": "451.00",
+      "grammas": 257
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 170,
+    "fields": {
+      "product": 70,
+      "size": "Средний",
+      "price": "456.00",
+      "grammas": 258
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 171,
+    "fields": {
+      "product": 70,
+      "size": "Большой",
+      "price": "395.00",
+      "grammas": 601
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 172,
+    "fields": {
+      "product": 71,
+      "size": "Маленький",
+      "price": "909.00",
+      "grammas": 503
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 173,
+    "fields": {
+      "product": 71,
+      "size": "Средний",
+      "price": "891.00",
+      "grammas": 307
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 174,
+    "fields": {
+      "product": 71,
+      "size": "Большой",
+      "price": "953.00",
+      "grammas": 506
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 175,
+    "fields": {
+      "product": 72,
+      "size": "Маленький",
+      "price": "495.00",
+      "grammas": 624
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 176,
+    "fields": {
+      "product": 72,
+      "size": "Средний",
+      "price": "484.00",
+      "grammas": 667
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 177,
+    "fields": {
+      "product": 72,
+      "size": "Большой",
+      "price": "539.00",
+      "grammas": 340
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 178,
+    "fields": {
+      "product": 73,
+      "size": "Маленький",
+      "price": "505.00",
+      "grammas": 372
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 179,
+    "fields": {
+      "product": 73,
+      "size": "Средний",
+      "price": "481.00",
+      "grammas": 408
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 180,
+    "fields": {
+      "product": 73,
+      "size": "Большой",
+      "price": "554.00",
+      "grammas": 164
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 181,
+    "fields": {
+      "product": 74,
+      "size": "Маленький",
+      "price": "712.00",
+      "grammas": 161
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 182,
+    "fields": {
+      "product": 74,
+      "size": "Средний",
+      "price": "688.00",
+      "grammas": 195
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 183,
+    "fields": {
+      "product": 74,
+      "size": "Большой",
+      "price": "601.00",
+      "grammas": 686
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 184,
+    "fields": {
+      "product": 75,
+      "size": "Маленький",
+      "price": "740.00",
+      "grammas": 619
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 185,
+    "fields": {
+      "product": 75,
+      "size": "Средний",
+      "price": "852.00",
+      "grammas": 354
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 186,
+    "fields": {
+      "product": 75,
+      "size": "Большой",
+      "price": "780.00",
+      "grammas": 563
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 187,
+    "fields": {
+      "product": 76,
+      "size": "Маленький",
+      "price": "553.00",
+      "grammas": 575
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 188,
+    "fields": {
+      "product": 76,
+      "size": "Средний",
+      "price": "592.00",
+      "grammas": 275
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 189,
+    "fields": {
+      "product": 76,
+      "size": "Большой",
+      "price": "650.00",
+      "grammas": 573
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 190,
+    "fields": {
+      "product": 77,
+      "size": "Маленький",
+      "price": "387.00",
+      "grammas": 521
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 191,
+    "fields": {
+      "product": 77,
+      "size": "Средний",
+      "price": "420.00",
+      "grammas": 598
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 192,
+    "fields": {
+      "product": 77,
+      "size": "Большой",
+      "price": "490.00",
+      "grammas": 658
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 193,
+    "fields": {
+      "product": 78,
+      "size": "Маленький",
+      "price": "530.00",
+      "grammas": 324
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 194,
+    "fields": {
+      "product": 78,
+      "size": "Средний",
+      "price": "604.00",
+      "grammas": 455
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 195,
+    "fields": {
+      "product": 78,
+      "size": "Большой",
+      "price": "541.00",
+      "grammas": 577
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 196,
+    "fields": {
+      "product": 79,
+      "size": "Маленький",
+      "price": "610.00",
+      "grammas": 233
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 197,
+    "fields": {
+      "product": 79,
+      "size": "Средний",
+      "price": "631.00",
+      "grammas": 324
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 198,
+    "fields": {
+      "product": 79,
+      "size": "Большой",
+      "price": "618.00",
+      "grammas": 339
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 199,
+    "fields": {
+      "product": 80,
+      "size": "Маленький",
+      "price": "537.00",
+      "grammas": 367
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 200,
+    "fields": {
+      "product": 80,
+      "size": "Средний",
+      "price": "478.00",
+      "grammas": 220
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 201,
+    "fields": {
+      "product": 80,
+      "size": "Большой",
+      "price": "491.00",
+      "grammas": 546
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 202,
+    "fields": {
+      "product": 81,
+      "size": "Маленький",
+      "price": "837.00",
+      "grammas": 588
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 203,
+    "fields": {
+      "product": 81,
+      "size": "Средний",
+      "price": "903.00",
+      "grammas": 410
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 204,
+    "fields": {
+      "product": 81,
+      "size": "Большой",
+      "price": "844.00",
+      "grammas": 622
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 205,
+    "fields": {
+      "product": 82,
+      "size": "Маленький",
+      "price": "714.00",
+      "grammas": 198
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 206,
+    "fields": {
+      "product": 82,
+      "size": "Средний",
+      "price": "827.00",
+      "grammas": 533
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 207,
+    "fields": {
+      "product": 82,
+      "size": "Большой",
+      "price": "828.00",
+      "grammas": 426
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 208,
+    "fields": {
+      "product": 83,
+      "size": "Маленький",
+      "price": "521.00",
+      "grammas": 699
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 209,
+    "fields": {
+      "product": 83,
+      "size": "Средний",
+      "price": "479.00",
+      "grammas": 285
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 210,
+    "fields": {
+      "product": 83,
+      "size": "Большой",
+      "price": "587.00",
+      "grammas": 445
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 211,
+    "fields": {
+      "product": 84,
+      "size": "Маленький",
+      "price": "754.00",
+      "grammas": 460
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 212,
+    "fields": {
+      "product": 84,
+      "size": "Средний",
+      "price": "788.00",
+      "grammas": 273
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 213,
+    "fields": {
+      "product": 84,
+      "size": "Большой",
+      "price": "796.00",
+      "grammas": 612
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 214,
+    "fields": {
+      "product": 85,
+      "size": "Маленький",
+      "price": "446.00",
+      "grammas": 699
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 215,
+    "fields": {
+      "product": 85,
+      "size": "Средний",
+      "price": "370.00",
+      "grammas": 376
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 216,
+    "fields": {
+      "product": 85,
+      "size": "Большой",
+      "price": "441.00",
+      "grammas": 342
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 217,
+    "fields": {
+      "product": 86,
+      "size": "Маленький",
+      "price": "892.00",
+      "grammas": 509
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 218,
+    "fields": {
+      "product": 86,
+      "size": "Средний",
+      "price": "759.00",
+      "grammas": 177
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 219,
+    "fields": {
+      "product": 86,
+      "size": "Большой",
+      "price": "853.00",
+      "grammas": 447
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 220,
+    "fields": {
+      "product": 87,
+      "size": "Маленький",
+      "price": "447.00",
+      "grammas": 289
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 221,
+    "fields": {
+      "product": 87,
+      "size": "Средний",
+      "price": "424.00",
+      "grammas": 480
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 222,
+    "fields": {
+      "product": 87,
+      "size": "Большой",
+      "price": "382.00",
+      "grammas": 297
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 223,
+    "fields": {
+      "product": 88,
+      "size": "Маленький",
+      "price": "678.00",
+      "grammas": 277
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 224,
+    "fields": {
+      "product": 88,
+      "size": "Средний",
+      "price": "624.00",
+      "grammas": 550
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 225,
+    "fields": {
+      "product": 88,
+      "size": "Большой",
+      "price": "743.00",
+      "grammas": 586
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 226,
+    "fields": {
+      "product": 89,
+      "size": "Маленький",
+      "price": "502.00",
+      "grammas": 642
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 227,
+    "fields": {
+      "product": 89,
+      "size": "Средний",
+      "price": "514.00",
+      "grammas": 151
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 228,
+    "fields": {
+      "product": 89,
+      "size": "Большой",
+      "price": "514.00",
+      "grammas": 230
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 229,
+    "fields": {
+      "product": 90,
+      "size": "Маленький",
+      "price": "584.00",
+      "grammas": 478
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 230,
+    "fields": {
+      "product": 90,
+      "size": "Средний",
+      "price": "580.00",
+      "grammas": 208
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 231,
+    "fields": {
+      "product": 90,
+      "size": "Большой",
+      "price": "501.00",
+      "grammas": 501
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 232,
+    "fields": {
+      "product": 91,
+      "size": "Маленький",
+      "price": "702.00",
+      "grammas": 599
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 233,
+    "fields": {
+      "product": 91,
+      "size": "Средний",
+      "price": "692.00",
+      "grammas": 404
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 234,
+    "fields": {
+      "product": 91,
+      "size": "Большой",
+      "price": "731.00",
+      "grammas": 370
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 235,
+    "fields": {
+      "product": 92,
+      "size": "Маленький",
+      "price": "478.00",
+      "grammas": 171
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 236,
+    "fields": {
+      "product": 92,
+      "size": "Средний",
+      "price": "484.00",
+      "grammas": 673
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 237,
+    "fields": {
+      "product": 92,
+      "size": "Большой",
+      "price": "536.00",
+      "grammas": 655
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 238,
+    "fields": {
+      "product": 93,
+      "size": "Маленький",
+      "price": "275.00",
+      "grammas": 320
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 239,
+    "fields": {
+      "product": 93,
+      "size": "Средний",
+      "price": "302.00",
+      "grammas": 456
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 240,
+    "fields": {
+      "product": 93,
+      "size": "Большой",
+      "price": "358.00",
+      "grammas": 586
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 241,
+    "fields": {
+      "product": 94,
+      "size": "Маленький",
+      "price": "912.00",
+      "grammas": 298
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 242,
+    "fields": {
+      "product": 94,
+      "size": "Средний",
+      "price": "886.00",
+      "grammas": 620
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 243,
+    "fields": {
+      "product": 94,
+      "size": "Большой",
+      "price": "906.00",
+      "grammas": 509
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 244,
+    "fields": {
+      "product": 95,
+      "size": "Маленький",
+      "price": "713.00",
+      "grammas": 389
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 245,
+    "fields": {
+      "product": 95,
+      "size": "Средний",
+      "price": "649.00",
+      "grammas": 590
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 246,
+    "fields": {
+      "product": 95,
+      "size": "Большой",
+      "price": "762.00",
+      "grammas": 391
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 247,
+    "fields": {
+      "product": 96,
+      "size": "Маленький",
+      "price": "563.00",
+      "grammas": 501
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 248,
+    "fields": {
+      "product": 96,
+      "size": "Средний",
+      "price": "525.00",
+      "grammas": 289
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 249,
+    "fields": {
+      "product": 96,
+      "size": "Большой",
+      "price": "598.00",
+      "grammas": 383
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 250,
+    "fields": {
+      "product": 97,
+      "size": "Маленький",
+      "price": "434.00",
+      "grammas": 331
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 251,
+    "fields": {
+      "product": 97,
+      "size": "Средний",
+      "price": "400.00",
+      "grammas": 389
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 252,
+    "fields": {
+      "product": 97,
+      "size": "Большой",
+      "price": "371.00",
+      "grammas": 513
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 253,
+    "fields": {
+      "product": 98,
+      "size": "Маленький",
+      "price": "667.00",
+      "grammas": 449
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 254,
+    "fields": {
+      "product": 98,
+      "size": "Средний",
+      "price": "673.00",
+      "grammas": 308
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 255,
+    "fields": {
+      "product": 98,
+      "size": "Большой",
+      "price": "667.00",
+      "grammas": 226
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 256,
+    "fields": {
+      "product": 99,
+      "size": "Маленький",
+      "price": "569.00",
+      "grammas": 392
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 257,
+    "fields": {
+      "product": 99,
+      "size": "Средний",
+      "price": "672.00",
+      "grammas": 699
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 258,
+    "fields": {
+      "product": 99,
+      "size": "Большой",
+      "price": "630.00",
+      "grammas": 565
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 259,
+    "fields": {
+      "product": 100,
+      "size": "Маленький",
+      "price": "451.00",
+      "grammas": 364
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 260,
+    "fields": {
+      "product": 100,
+      "size": "Средний",
+      "price": "432.00",
+      "grammas": 466
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 261,
+    "fields": {
+      "product": 100,
+      "size": "Большой",
+      "price": "383.00",
+      "grammas": 265
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 262,
+    "fields": {
+      "product": 101,
+      "size": "Маленький",
+      "price": "509.00",
+      "grammas": 484
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 263,
+    "fields": {
+      "product": 101,
+      "size": "Средний",
+      "price": "576.00",
+      "grammas": 155
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 264,
+    "fields": {
+      "product": 101,
+      "size": "Большой",
+      "price": "525.00",
+      "grammas": 692
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 265,
+    "fields": {
+      "product": 102,
+      "size": "Маленький",
+      "price": "535.00",
+      "grammas": 265
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 266,
+    "fields": {
+      "product": 102,
+      "size": "Средний",
+      "price": "603.00",
+      "grammas": 662
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 267,
+    "fields": {
+      "product": 102,
+      "size": "Большой",
+      "price": "540.00",
+      "grammas": 662
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 268,
+    "fields": {
+      "product": 103,
+      "size": "Маленький",
+      "price": "370.00",
+      "grammas": 258
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 269,
+    "fields": {
+      "product": 103,
+      "size": "Средний",
+      "price": "375.00",
+      "grammas": 438
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 270,
+    "fields": {
+      "product": 103,
+      "size": "Большой",
+      "price": "465.00",
+      "grammas": 232
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 271,
+    "fields": {
+      "product": 104,
+      "size": "Маленький",
+      "price": "536.00",
+      "grammas": 479
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 272,
+    "fields": {
+      "product": 104,
+      "size": "Средний",
+      "price": "596.00",
+      "grammas": 167
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 273,
+    "fields": {
+      "product": 104,
+      "size": "Большой",
+      "price": "573.00",
+      "grammas": 307
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 274,
+    "fields": {
+      "product": 105,
+      "size": "Маленький",
+      "price": "666.00",
+      "grammas": 485
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 275,
+    "fields": {
+      "product": 105,
+      "size": "Средний",
+      "price": "644.00",
+      "grammas": 243
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 276,
+    "fields": {
+      "product": 105,
+      "size": "Большой",
+      "price": "636.00",
+      "grammas": 388
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 277,
+    "fields": {
+      "product": 106,
+      "size": "Маленький",
+      "price": "660.00",
+      "grammas": 393
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 278,
+    "fields": {
+      "product": 106,
+      "size": "Средний",
+      "price": "640.00",
+      "grammas": 299
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 279,
+    "fields": {
+      "product": 106,
+      "size": "Большой",
+      "price": "650.00",
+      "grammas": 590
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 280,
+    "fields": {
+      "product": 107,
+      "size": "Маленький",
+      "price": "673.00",
+      "grammas": 628
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 281,
+    "fields": {
+      "product": 107,
+      "size": "Средний",
+      "price": "681.00",
+      "grammas": 448
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 282,
+    "fields": {
+      "product": 107,
+      "size": "Большой",
+      "price": "627.00",
+      "grammas": 245
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 283,
+    "fields": {
+      "product": 108,
+      "size": "Маленький",
+      "price": "345.00",
+      "grammas": 388
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 284,
+    "fields": {
+      "product": 108,
+      "size": "Средний",
+      "price": "379.00",
+      "grammas": 628
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 285,
+    "fields": {
+      "product": 108,
+      "size": "Большой",
+      "price": "415.00",
+      "grammas": 259
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 286,
+    "fields": {
+      "product": 109,
+      "size": "Маленький",
+      "price": "364.00",
+      "grammas": 689
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 287,
+    "fields": {
+      "product": 109,
+      "size": "Средний",
+      "price": "316.00",
+      "grammas": 185
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 288,
+    "fields": {
+      "product": 109,
+      "size": "Большой",
+      "price": "291.00",
+      "grammas": 305
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 289,
+    "fields": {
+      "product": 110,
+      "size": "Маленький",
+      "price": "394.00",
+      "grammas": 610
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 290,
+    "fields": {
+      "product": 110,
+      "size": "Средний",
+      "price": "371.00",
+      "grammas": 387
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 291,
+    "fields": {
+      "product": 110,
+      "size": "Большой",
+      "price": "299.00",
+      "grammas": 561
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 292,
+    "fields": {
+      "product": 111,
+      "size": "Маленький",
+      "price": "833.00",
+      "grammas": 461
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 293,
+    "fields": {
+      "product": 111,
+      "size": "Средний",
+      "price": "894.00",
+      "grammas": 599
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 294,
+    "fields": {
+      "product": 111,
+      "size": "Большой",
+      "price": "936.00",
+      "grammas": 319
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 295,
+    "fields": {
+      "product": 112,
+      "size": "Маленький",
+      "price": "434.00",
+      "grammas": 559
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 296,
+    "fields": {
+      "product": 112,
+      "size": "Средний",
+      "price": "463.00",
+      "grammas": 644
+    }
+  },
+  {
+    "model": "products.productsize",
+    "pk": 297,
+    "fields": {
+      "product": 112,
+      "size": "Большой",
+      "price": "517.00",
+      "grammas": 490
     }
   }
 ]

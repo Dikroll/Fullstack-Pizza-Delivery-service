@@ -14,17 +14,3 @@
   padding: 0;
 }
 
-.cart-page button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.cart-page button:hover {
-  background-color: #e65c00;
-}

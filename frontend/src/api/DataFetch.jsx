@@ -208,3 +208,12 @@ export const refresh_token = async () => {
     throw error;
   }
 };
+
+setInterval(async () => {
+  try {
+    await refresh_token();
+    console.log("Token refreshed successfully");
+  } catch (error) {
+    console.log("Auto-refresh failed:", error);
+  }
+}, 10 * 60 * 1000);

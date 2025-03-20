@@ -17,11 +17,19 @@ const ProfileForm = ({ user, onSave }) => {
     <form className="profile-form" onSubmit={Submit}>
       <div className="form-group">
         <label>Имя</label>
-        <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+        <input 
+            type="text" 
+            value={firstName || ''} 
+            onChange={(e) => setFirstName(e.target.value)} 
+        />
       </div>
       <div className="form-group">
         <label>Email</label>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input 
+            type="email" 
+            value={email || ''} 
+            onChange={(e) => setEmail(e.target.value)} 
+        />
       </div>
       <div className="form-group">
         <label>Телефон</label>
@@ -29,15 +37,23 @@ const ProfileForm = ({ user, onSave }) => {
       </div>
       <div className="form-group">
         <label>Адресс</label>
-        <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
+        <input 
+            type="text" 
+            value={address || ''} 
+            onChange={(e) => setAddress(e.target.value)} 
+        />
       </div>
       <div className="form-group">
         <label>День рождения</label>
-        <input type="date" value={birthday} onChange={(e) => setBirthday(e.target.value)} />
+        <input 
+    type="date" 
+            value={birthday || ''} 
+            onChange={(e) => setBirthday(e.target.value)} 
+        />
       </div>
       <div className="form-group">
         <label>Пол</label>
-        <select value={gender} onChange={(e) => setGender(e.target.value)}>
+        <select value={gender || ''} onChange={(e) => setGender(e.target.value)}>
           <option value="male">Мужской</option>
           <option value="female">Женский</option>
         </select>

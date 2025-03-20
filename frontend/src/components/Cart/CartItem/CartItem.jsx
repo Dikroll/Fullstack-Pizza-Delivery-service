@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from '@/context/UseCart';
 import './CartItem.css';
-import { config } from "@/services/config";
+import { config } from '@/services/config';
 
 export const CartItem = ({ item }) => {
   const { RemoveItem, UpdateQuantity } = useCart();
@@ -26,7 +26,9 @@ export const CartItem = ({ item }) => {
   };
 
   return (
+    <div className="cart-items">
     <div className="cart-item">
+      <button className="remove-icon" onClick={RemoveProduct}>×</button>
       <img
         src={`${config.apiUrl}${item.product.image_url}`}
         alt={item.product.name}
@@ -35,26 +37,26 @@ export const CartItem = ({ item }) => {
       <div className="cart-item-details">
         <h3 className="cart-item-title">{item.product.name}</h3>
         <p className="cart-item-size">Размер: {item.size?.size || "Неизвестно"}</p>
-        <p className="cart-item-price">Цена: {item.size?.price || 0}₽</p>
-        <div className="quantity-controls">
-          <button
-            onClick={() => QuantityChange(quantity - 1)}
-            className="quantity-btn"
-          >
-            −
-          </button>
-          <span className="quantity-value">{quantity}</span>
-          <button
-            onClick={() => QuantityChange(quantity + 1)}
-            className="quantity-btn"
-          >
-            +
-          </button>
+        <div className="price-quantity-container">
+          <div className="quantity-container">
+            <button
+              onClick={() => QuantityChange(quantity - 1)}
+              className="quantity-btn left"
+            >
+              −
+            </button>
+            <span className="quantity-value">{quantity}</span>
+            <button
+              onClick={() => QuantityChange(quantity + 1)}
+              className="quantity-btn right"
+            >
+              +
+            </button>
+          </div>
+          <p className="cart-item-price">{item.size?.price || 0}₽</p>
         </div>
-        <button onClick={RemoveProduct} className="remove-btn">
-          Удалить
-        </button>
       </div>
+    </div>
     </div>
   );
 };

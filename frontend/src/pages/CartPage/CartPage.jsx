@@ -1,70 +1,64 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '@/context/UseCart';
+import { useAuth } from '@/context/UseAuth'; 
 import { CartItem } from '@/components/Cart/CartItem/CartItem';
 import PaymentOptions from '@/components/Cart/PaymentOptions/PaymentOptions';
 import TotalSum from '@/components/Cart/TotalSum/TotalSum';
 import OrderForm from '@/components/Cart/OrderForm/OrderForm';
-import { createOrder, authenticated_user } from "@/api/DataFetch"; 
+import { createOrder } from "@/api/DataFetch"; 
 import './CartPage.css';
 
-const CartPage = () => {
+export default function CartPage() {
     const { cartItems, total, RemoveItem, clearCart } = useCart();
+    const { user, loading } = useAuth(); 
     const navigate = useNavigate();
     const [selectedPayment, setSelectedPayment] = useState('cash');
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '', 
-        address: '',
-        apartment: '',
-        entrance: '',
-        floor: '',
-        comment: '',
-        email: '',
-    });
-    const [isAuthenticated, setIsAuthenticated] = useState(false); 
     const [errorMessage, setErrorMessage] = useState('');
 
-    useEffect(() => {
-        const checkAuth = async () => {
-            try {
-                const user = await authenticated_user();
-                if (user) {
-                    setIsAuthenticated(true); 
-                    setFormData((prevData) => ({
-                        ...prevData,
-                        phone: user.phone, 
-                    }));
-                } else {
-                    setIsAuthenticated(false);
-                }
-            } catch (error) {
-                setIsAuthenticated(false);
-            }
-        };
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '+7',
+        address: '',
+        entrance: '',
+        apartment: '',
+        floor: '',
+        email: '',
+        comment: '',
+    });
 
-        checkAuth();
-    }, []);
+    useEffect(() => {
+        if (!loading && user) {
+            setFormData((prevData) => ({
+                ...prevData,
+                name: user.first_name || '',
+                phone: user.phone || '+7',
+                email: user.email || '',
+            }));
+        }
+    }, [user, loading]);
 
     const PaymentChange = (e) => {
         setSelectedPayment(e.target.value);
     };
 
-    const FormChange = (e) => {
+    const handleFormChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+
+        if (name === 'phone') {
+            if (!value.startsWith('+7')) return;
+        }
+
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
     };
 
     const SubmitOrder = async () => {
-        if (!isAuthenticated) {
+        if (!user) {
             navigate('/login'); 
             return; 
-        }
-
-        // Проверка обязательных полей
-        if (!formData.phone || !formData.address) {
-            setErrorMessage('Пожалуйста, заполните все обязательные поля.');
-            return;
         }
 
         const finalOrderData = {
@@ -80,18 +74,6 @@ const CartPage = () => {
         try {
             const response = await createOrder(finalOrderData);
             const orderId = response.id;
-
-            setFormData({
-                name: '',
-                phone: '', 
-                address: '',
-                apartment: '',
-                entrance: '',
-                floor: '',
-                comment: '',
-                email: '',
-            });
-
             clearCart();
 
             if (selectedPayment === 'card_online') {
@@ -114,13 +96,15 @@ const CartPage = () => {
                     {cartItems.map((item) => (
                         <CartItem key={item.id} item={item} size={item.size} onRemove={RemoveItem} />
                     ))}
-                    <OrderForm formData={formData} onFormChange={FormChange} />
+                    <h2>Доставка</h2>
+                    <OrderForm formData={formData} onFormChange={handleFormChange} />
+                    <h2>Оплата</h2>
                     <PaymentOptions
                         selectedPayment={selectedPayment}
                         onPaymentChange={PaymentChange}
                     />
                     <TotalSum total={total} />
-                    <button type="button" onClick={SubmitOrder}>
+                    <button onClick={SubmitOrder} className="submit-button">
                         Оформить заказ
                     </button>
                 </div>
@@ -129,6 +113,4 @@ const CartPage = () => {
             )}
         </div>
     );
-};
-
-export default CartPage;
+}
