@@ -55,12 +55,12 @@ class OrderView(APIView):
         serializer = OrderSerializer(order)
         order_data = serializer.data
 
-        subject = f"Подтверждение заказа #{order_data['id']}"
-        recipient_list = [order_data['email']]
-        template_name = "emails/order_info.html"  
-        context = {"order": order_data, "total_price": total_price} 
+        # subject = f"Подтверждение заказа #{order_data['id']}"
+        # recipient_list = [order_data['email']]
+        # template_name = "emails/order_info.html"  
+        # context = {"order": order_data, "total_price": total_price} 
 
-        send_email(subject, recipient_list, template_name, context)
+        # send_email(subject, recipient_list, template_name, context)
 
         return Response(order_data, status=status.HTTP_201_CREATED)
     

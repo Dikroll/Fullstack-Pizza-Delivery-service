@@ -26,6 +26,7 @@ export const AuthProvider = ({ children }) => {
       if (user) {
         setUser(user);
         navigate('/');
+        window.location.reload()
         return { success: true };
       } else {
         return { success: false, message: 'Incorrect phone number or password.' };

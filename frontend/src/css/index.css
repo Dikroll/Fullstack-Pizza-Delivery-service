@@ -3,16 +3,35 @@
     src: url('@/assets/fonts/angelicac.otf');
   }
   
+  
   @font-face {
     font-family: 'Gilroy';
-    src: url('@/assets/fonts/Gilroy.ttf');
+    src: url('@/assets/fonts/Gilroy.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('@/assets/fonts/Gilroy-bold.ttf')  format('truetype');
+    font-weight: 600; 
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('@/assets/fonts/Gilroy-light.ttf')  format('truetype');
+    font-weight: 200; 
+    font-style: normal;
+
+  }
+
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gilroy';
+    font-weight: 400;
     background-color: #fafafa;
     margin: 0;
     padding: 0;

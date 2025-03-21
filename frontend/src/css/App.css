@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 20px 0;
   background-color: #fafafa;
+  font-family: 'Gilroy';
 }
 
 
@@ -94,7 +95,7 @@ header .navbar {
 }
 
 .navbar-nav .dropdown-menu a:hover {
-  color: #ffb342;
+  color: #e94a46;
   background-color: #fff;
 }
 
@@ -144,19 +145,17 @@ header .navbar {
 }
 
 .footer {
-  background-color: #111; 
-  color: #fff; 
+  background-color: #0d0d0d;
+  color: #fff;
   padding: 20px 0;
   width: 100%;
-  margin-top: 50px;
-  
+  margin-top: auto; 
 }
 
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -168,7 +167,6 @@ header .navbar {
 .footer-block {
   width: 30%;
   min-width: 250px;
-  
 }
 
 
@@ -192,15 +190,24 @@ header .navbar {
 }
 
 .footer-link:hover {
-  color: #ffb342;
+  color: #e94a46;
 }
 
-
+/* Нижняя строка */
 .footer-bottom {
   text-align: center;
   font-size: 12px;
   color: #868e96;
-  margin-top: 20px;
+  padding-top: 10px;
+}
+
+
+.footer-categories {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px 20px;
+  padding: 0;
+  list-style: none;
 }
 
 
@@ -213,6 +220,10 @@ header .navbar {
 
   .footer-block {
       width: 100%;
-      margin-bottom: 20px;
+  }
+
+  .footer-categories {
+      grid-template-columns: repeat(1, auto); 
+      text-align: center;
   }
 }

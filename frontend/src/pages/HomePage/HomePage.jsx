@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ImageSlider from '@/components/Products/Slider/Slider';
 import Products from '@/components/Products/ProductsCard/ProductsCard';
 import ProductModal from '@/components/Products/ProductModal/ProductModal'; 
-
+import "./HomePage.css"
 const HomePage = ({ banners, categories, products }) => {
   const [cart, setCart] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -28,13 +28,14 @@ const HomePage = ({ banners, categories, products }) => {
   return (
     <div>
       <ImageSlider banners={banners} />
-      <Products 
-        products={products} 
-        categories={categories} 
-        cart={cart} 
-        updateCart={updateCart} 
-        openModal={openModal}
-      />
+
+        <Products 
+          products={products} 
+          categories={categories} 
+          cart={cart} 
+          updateCart={updateCart} 
+          openModal={openModal}
+        />
       {selectedProduct && (
         <ProductModal 
           product={selectedProduct} 
@@ -43,7 +44,11 @@ const HomePage = ({ banners, categories, products }) => {
           updateCart={updateCart} 
         />
       )}
+
+      <div className='space'></div>
+      
     </div>
+  
   );
 };
 

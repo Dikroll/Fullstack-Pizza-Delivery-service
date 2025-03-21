@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useCart } from '@/context/UseCart';
 import { useAuth } from '@/context/UseAuth'; 
 import { CartItem } from '@/components/Cart/CartItem/CartItem';
-import PaymentOptions from '@/components/Cart/PaymentOptions/PaymentOptions';
-import TotalSum from '@/components/Cart/TotalSum/TotalSum';
 import OrderForm from '@/components/Cart/OrderForm/OrderForm';
 import { createOrder } from "@/api/DataFetch"; 
 import './CartPage.css';
@@ -96,14 +94,7 @@ export default function CartPage() {
                     {cartItems.map((item) => (
                         <CartItem key={item.id} item={item} size={item.size} onRemove={RemoveItem} />
                     ))}
-                    <h2>Доставка</h2>
-                    <OrderForm formData={formData} onFormChange={handleFormChange} />
-                    <h2>Оплата</h2>
-                    <PaymentOptions
-                        selectedPayment={selectedPayment}
-                        onPaymentChange={PaymentChange}
-                    />
-                    <TotalSum total={total} />
+                    <OrderForm formData={formData} onFormChange={handleFormChange} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total}/>
                     <button onClick={SubmitOrder} className="submit-button">
                         Оформить заказ
                     </button>

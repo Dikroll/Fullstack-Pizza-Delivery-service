@@ -1,16 +1,26 @@
 import React from 'react';
+import ScrollToCategory from '@/utils/scrollToCategory';
+
 
 
 const Footer = ({ categories }) => {
+  const scrollToCategory = ScrollToCategory()
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-block">
           <h5 className="footer-title">Категории</h5>
-          <ul className='footer-categories'>
-            {categories.map((category) => (
+          <ul className="footer-categories">
+          {categories.map((category) => (
               <li key={category.id}>
-                <a href={`#category-${category.id}`} className="footer-link">
+                <a 
+                  href={`/#category-${category.id}`} 
+                  className="footer-link"
+                  onClick={(e) => {
+                    e.preventDefault(); 
+                    scrollToCategory(category.id);
+                  }}
+                >
                   {category.name}
                 </a>
               </li>

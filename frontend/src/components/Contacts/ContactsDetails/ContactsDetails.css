@@ -8,6 +8,8 @@
   border-radius: 8px;
   overflow: hidden;
   font-family: 'Gilroy';
+  margin-left: 80px;
+  margin-top: 40px;
 }
 
 .contacts-info h2 {
@@ -23,9 +25,6 @@
   margin-bottom: 10px;
 }
 
-.contact-info-item {
-  margin-bottom: 20px;
-}
 
 .contact-info-item p {
   font-size: 16px;

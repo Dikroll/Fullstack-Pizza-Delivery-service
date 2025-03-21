@@ -2,16 +2,16 @@
 .contact-page {
   display: flex; 
   justify-content: space-between; 
-  gap: 20px; 
+
   height: 100vh; 
-  padding: 20px; 
+
   background-color: #fafafa;
 }
 
 
 .contact-content {
   flex: 1; 
-  padding: 20px;
+
   background-color: #fafafa;
   height: 100%; 
 }

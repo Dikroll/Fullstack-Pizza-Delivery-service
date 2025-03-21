@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Category, Product, Banner, ProductSize, Promotion
 from django.utils.html import format_html
 from django import forms
-
+from rest_framework_simplejwt.token_blacklist import models
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
@@ -17,10 +17,6 @@ class PromotionAdmin(admin.ModelAdmin):
     list_display = ('name', 'created_at')
     inlines = [BannerInline]  
 
-@admin.register(Banner)
-class BannerAdmin(admin.ModelAdmin):
-    list_display = ('title', 'promotion', 'created_at')
-    list_filter = ('promotion',)
     
 class ProductSizeInline(admin.TabularInline):
     model = ProductSize
@@ -32,6 +28,8 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ('category',)
     search_fields = ('name', 'description')
     readonly_fields = ('display_image',)
+
+
     inlines = [ProductSizeInline]
     available_sizes_display = forms.CharField(
         widget=forms.Textarea,
@@ -54,3 +52,9 @@ class ProductAdmin(admin.ModelAdmin):
         return "Нет изображения"
     display_image.short_description = "Предпросмотр изображения"
 
+
+admin.site.site_header = 'Дымок Пицца'
+admin.site.site_title = 'Дымок Пицца'
+admin.site.index_title = 'Панель управления'
+admin.site.unregister(models.BlacklistedToken)
+admin.site.unregister(models.OutstandingToken)

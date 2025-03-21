@@ -78,7 +78,7 @@
       "name": "Маргарита",
       "description": "Классическая пицца с томатным соусом, сыром моцарелла и базиликом.",
       "base_price": "250.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 1,
       "base_ingredients": "Соус томатный, сыр моцарелла, базилик."
     }
@@ -110,7 +110,7 @@
       "name": "Гавайская",
       "description": "Пицца с ветчиной, ананасами и сыром моцарелла.",
       "base_price": "330.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 1,
       "base_ingredients": "Ветчина, ананасы, сыр моцарелла."
     }
@@ -142,7 +142,7 @@
       "name": "Четыре сыра",
       "description": "Пицца с четырьмя видами сыра.",
       "base_price": "380.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 1,
       "base_ingredients": "Моцарелла, пармезан, горгонзола, рикотта."
     }
@@ -174,7 +174,7 @@
       "name": "Пицца с морепродуктами",
       "description": "Пицца с морепродуктами, томатным соусом и сыром моцарелла.",
       "base_price": "450.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 1,
       "base_ingredients": "Морепродукты, томатный соус, сыр моцарелла."
     }
@@ -206,7 +206,7 @@
       "name": "Филадельфия",
       "description": "Роллы с лососем, авокадо и огурцом.",
       "base_price": "450.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 2,
       "base_ingredients": "Лосось, авокадо, огурец."
     }
@@ -228,7 +228,7 @@
       "name": "Калифорния",
       "description": "Роллы с крабовым мясом, авокадо и огурцом.",
       "base_price": "400.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 2,
       "base_ingredients": "Крабовое мясо, авокадо, огурец."
     }
@@ -250,7 +250,7 @@
       "name": "Тигровые роллы",
       "description": "Роллы с тигровыми креветками и соусом терияки.",
       "base_price": "480.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 2,
       "base_ingredients": "Тигровые креветки, соус терияки."
     }
@@ -272,7 +272,7 @@
       "name": "Роллы с угрём",
       "description": "Роллы с угрём и авокадо.",
       "base_price": "500.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 2,
       "base_ingredients": "Угрь, авокадо."
     }
@@ -294,7 +294,7 @@
       "name": "Терасси",
       "description": "Суши с авокадо, угрём и креветками.",
       "base_price": "550.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 2,
       "base_ingredients": "Авокадо, угрь, креветки."
     }
@@ -316,7 +316,7 @@
       "name": "Спагетти Карбонара",
       "description": "Спагетти с соусом карбонара, беконом и пармезаном.",
       "base_price": "500.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 3,
       "base_ingredients": "Спагетти, соус карбонара, бекон, пармезан."
     }
@@ -338,7 +338,7 @@
       "name": "Стейк с картошкой",
       "description": "Стейк из говядины с гарниром из картофеля.",
       "base_price": "700.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 3,
       "base_ingredients": "Говядина, картофель."
     }
@@ -360,7 +360,7 @@
       "name": "Паста Болоньезе",
       "description": "Паста с мясным соусом болоньезе.",
       "base_price": "550.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 3,
       "base_ingredients": "Паста, мясной соус."
     }
@@ -382,7 +382,7 @@
       "name": "Ризотто с морепродуктами",
       "description": "Ризотто с морепродуктами в сливочном соусе.",
       "base_price": "600.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 3,
       "base_ingredients": "Ризотто, морепродукты, сливочный соус."
     }
@@ -404,7 +404,7 @@
       "name": "Кока-Кола",
       "description": "Газированный напиток Кока-Кола.",
       "base_price": "100.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 4,
       "base_ingredients": "Кола."
     }
@@ -426,7 +426,7 @@
       "name": "Сок апельсиновый",
       "description": "Свежевыжатый апельсиновый сок.",
       "base_price": "120.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 4,
       "base_ingredients": "Апельсин."
     }
@@ -448,7 +448,7 @@
       "name": "Минеральная вода",
       "description": "Газа или без газа.",
       "base_price": "80.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 4,
       "base_ingredients": "Вода."
     }
@@ -470,7 +470,7 @@
       "name": "Чай",
       "description": "Зеленый или черный чай.",
       "base_price": "70.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 4,
       "base_ingredients": "Чай."
     }
@@ -492,7 +492,7 @@
       "name": "Тирамису",
       "description": "Итальянский десерт с маскарпоне и кофе.",
       "base_price": "150.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 5,
       "base_ingredients": "Маскарпоне, кофе."
     }
@@ -514,7 +514,7 @@
       "name": "Чизкейк",
       "description": "Десерт с кремом из сыра и ягодами.",
       "base_price": "180.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 5,
       "base_ingredients": "Сыр, ягоды."
     }
@@ -536,7 +536,7 @@
       "name": "Мусс шоколадный",
       "description": "Шоколадный мусс с взбитыми сливками.",
       "base_price": "170.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 5,
       "base_ingredients": "Шоколад, сливки."
     }
@@ -558,7 +558,7 @@
       "name": "Панна котта",
       "description": "Итальянский десерт на основе сливок.",
       "base_price": "160.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 5,
       "base_ingredients": "Сливки."
     }
@@ -652,7 +652,7 @@
       "name": "Цезарь",
       "description": "Вкусное блюдо: Цезарь.",
       "base_price": "422.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -664,7 +664,7 @@
       "name": "Греческий",
       "description": "Вкусное блюдо: Греческий.",
       "base_price": "301.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -676,7 +676,7 @@
       "name": "Оливье",
       "description": "Вкусное блюдо: Оливье.",
       "base_price": "709.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -688,7 +688,7 @@
       "name": "Мимоза",
       "description": "Вкусное блюдо: Мимоза.",
       "base_price": "584.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -700,7 +700,7 @@
       "name": "Винегрет",
       "description": "Вкусное блюдо: Винегрет.",
       "base_price": "530.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -712,7 +712,7 @@
       "name": "Сельдь под шубой",
       "description": "Вкусное блюдо: Сельдь под шубой.",
       "base_price": "326.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -724,7 +724,7 @@
       "name": "Тёплый с курицей",
       "description": "Вкусное блюдо: Тёплый с курицей.",
       "base_price": "364.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -736,7 +736,7 @@
       "name": "Крабовый",
       "description": "Вкусное блюдо: Крабовый.",
       "base_price": "657.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -748,7 +748,7 @@
       "name": "Фруктовый",
       "description": "Вкусное блюдо: Фруктовый.",
       "base_price": "261.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -760,7 +760,7 @@
       "name": "С тунцом",
       "description": "Вкусное блюдо: С тунцом.",
       "base_price": "497.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 6,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -772,7 +772,7 @@
       "name": "Картофель фри",
       "description": "Вкусное блюдо: Картофель фри.",
       "base_price": "766.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -784,7 +784,7 @@
       "name": "Начос",
       "description": "Вкусное блюдо: Начос.",
       "base_price": "461.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -796,7 +796,7 @@
       "name": "Крылышки BBQ",
       "description": "Вкусное блюдо: Крылышки BBQ.",
       "base_price": "599.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -808,7 +808,7 @@
       "name": "Сырные палочки",
       "description": "Вкусное блюдо: Сырные палочки.",
       "base_price": "377.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -820,7 +820,7 @@
       "name": "Луковые кольца",
       "description": "Вкусное блюдо: Луковые кольца.",
       "base_price": "699.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -832,7 +832,7 @@
       "name": "Хлебная корзина",
       "description": "Вкусное блюдо: Хлебная корзина.",
       "base_price": "624.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -844,7 +844,7 @@
       "name": "Брускетта",
       "description": "Вкусное блюдо: Брускетта.",
       "base_price": "239.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -856,7 +856,7 @@
       "name": "Фалафель",
       "description": "Вкусное блюдо: Фалафель.",
       "base_price": "427.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -868,7 +868,7 @@
       "name": "Тапас",
       "description": "Вкусное блюдо: Тапас.",
       "base_price": "240.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -880,7 +880,7 @@
       "name": "Мини-кебабы",
       "description": "Вкусное блюдо: Мини-кебабы.",
       "base_price": "454.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 7,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -892,7 +892,7 @@
       "name": "Борщ",
       "description": "Вкусное блюдо: Борщ.",
       "base_price": "201.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -904,7 +904,7 @@
       "name": "Солянка",
       "description": "Вкусное блюдо: Солянка.",
       "base_price": "272.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -916,7 +916,7 @@
       "name": "Грибной крем-суп",
       "description": "Вкусное блюдо: Грибной крем-суп.",
       "base_price": "709.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -928,7 +928,7 @@
       "name": "Том Ям",
       "description": "Вкусное блюдо: Том Ям.",
       "base_price": "280.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -940,7 +940,7 @@
       "name": "Рамен",
       "description": "Вкусное блюдо: Рамен.",
       "base_price": "774.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -952,7 +952,7 @@
       "name": "Куриный бульон",
       "description": "Вкусное блюдо: Куриный бульон.",
       "base_price": "438.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -964,7 +964,7 @@
       "name": "Щи",
       "description": "Вкусное блюдо: Щи.",
       "base_price": "528.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -976,7 +976,7 @@
       "name": "Уха",
       "description": "Вкусное блюдо: Уха.",
       "base_price": "203.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -988,7 +988,7 @@
       "name": "Гаспачо",
       "description": "Вкусное блюдо: Гаспачо.",
       "base_price": "429.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1000,7 +1000,7 @@
       "name": "Мисо-суп",
       "description": "Вкусное блюдо: Мисо-суп.",
       "base_price": "590.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 8,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1012,7 +1012,7 @@
       "name": "Чизбургер",
       "description": "Вкусное блюдо: Чизбургер.",
       "base_price": "244.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1024,7 +1024,7 @@
       "name": "Гамбургер",
       "description": "Вкусное блюдо: Гамбургер.",
       "base_price": "280.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1036,7 +1036,7 @@
       "name": "Биг Бургер",
       "description": "Вкусное блюдо: Биг Бургер.",
       "base_price": "721.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1048,7 +1048,7 @@
       "name": "Веган Бургер",
       "description": "Вкусное блюдо: Веган Бургер.",
       "base_price": "649.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1060,7 +1060,7 @@
       "name": "Дабл Чиз",
       "description": "Вкусное блюдо: Дабл Чиз.",
       "base_price": "777.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1072,7 +1072,7 @@
       "name": "Куриный Бургер",
       "description": "Вкусное блюдо: Куриный Бургер.",
       "base_price": "744.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1084,7 +1084,7 @@
       "name": "Фиш Бургер",
       "description": "Вкусное блюдо: Фиш Бургер.",
       "base_price": "640.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1096,7 +1096,7 @@
       "name": "Острый Бургер",
       "description": "Вкусное блюдо: Острый Бургер.",
       "base_price": "415.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1108,7 +1108,7 @@
       "name": "Барбекю Бургер",
       "description": "Вкусное блюдо: Барбекю Бургер.",
       "base_price": "582.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1120,7 +1120,7 @@
       "name": "Мясной Бургер",
       "description": "Вкусное блюдо: Мясной Бургер.",
       "base_price": "405.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 9,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1132,7 +1132,7 @@
       "name": "Классический",
       "description": "Вкусное блюдо: Классический.",
       "base_price": "570.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1144,7 +1144,7 @@
       "name": "Чикагский",
       "description": "Вкусное блюдо: Чикагский.",
       "base_price": "442.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1156,7 +1156,7 @@
       "name": "Нью-Йоркский",
       "description": "Вкусное блюдо: Нью-Йоркский.",
       "base_price": "446.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1168,7 +1168,7 @@
       "name": "Техасский",
       "description": "Вкусное блюдо: Техасский.",
       "base_price": "650.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1180,7 +1180,7 @@
       "name": "Чили-дог",
       "description": "Вкусное блюдо: Чили-дог.",
       "base_price": "331.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1192,7 +1192,7 @@
       "name": "Сырный",
       "description": "Вкусное блюдо: Сырный.",
       "base_price": "738.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1204,7 +1204,7 @@
       "name": "Бекон-дог",
       "description": "Вкусное блюдо: Бекон-дог.",
       "base_price": "685.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1216,7 +1216,7 @@
       "name": "Грибной",
       "description": "Вкусное блюдо: Грибной.",
       "base_price": "269.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1228,7 +1228,7 @@
       "name": "Дабл-дог",
       "description": "Вкусное блюдо: Дабл-дог.",
       "base_price": "776.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1240,7 +1240,7 @@
       "name": "Мини-дог",
       "description": "Вкусное блюдо: Мини-дог.",
       "base_price": "360.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 10,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1252,7 +1252,7 @@
       "name": "Свиной",
       "description": "Вкусное блюдо: Свиной.",
       "base_price": "358.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1264,7 +1264,7 @@
       "name": "Куриный",
       "description": "Вкусное блюдо: Куриный.",
       "base_price": "523.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1276,7 +1276,7 @@
       "name": "Говяжий",
       "description": "Вкусное блюдо: Говяжий.",
       "base_price": "689.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1288,7 +1288,7 @@
       "name": "Бараний",
       "description": "Вкусное блюдо: Бараний.",
       "base_price": "494.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1300,7 +1300,7 @@
       "name": "Овощной",
       "description": "Вкусное блюдо: Овощной.",
       "base_price": "333.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1312,7 +1312,7 @@
       "name": "Рыбный",
       "description": "Вкусное блюдо: Рыбный.",
       "base_price": "410.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1324,7 +1324,7 @@
       "name": "Креветочный",
       "description": "Вкусное блюдо: Креветочный.",
       "base_price": "534.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1336,7 +1336,7 @@
       "name": "Ассорти",
       "description": "Вкусное блюдо: Ассорти.",
       "base_price": "391.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1348,7 +1348,7 @@
       "name": "Шашлык-гриль",
       "description": "Вкусное блюдо: Шашлык-гриль.",
       "base_price": "777.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1360,7 +1360,7 @@
       "name": "Классический",
       "description": "Вкусное блюдо: Классический.",
       "base_price": "651.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 11,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1372,7 +1372,7 @@
       "name": "Лосось-гриль",
       "description": "Вкусное блюдо: Лосось-гриль.",
       "base_price": "427.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1384,7 +1384,7 @@
       "name": "Креветки в соусе",
       "description": "Вкусное блюдо: Креветки в соусе.",
       "base_price": "624.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1396,7 +1396,7 @@
       "name": "Мидии",
       "description": "Вкусное блюдо: Мидии.",
       "base_price": "272.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1408,7 +1408,7 @@
       "name": "Кальмары",
       "description": "Вкусное блюдо: Кальмары.",
       "base_price": "701.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1420,7 +1420,7 @@
       "name": "Тунец стейк",
       "description": "Вкусное блюдо: Тунец стейк.",
       "base_price": "297.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1432,7 +1432,7 @@
       "name": "Осьминог",
       "description": "Вкусное блюдо: Осьминог.",
       "base_price": "552.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1444,7 +1444,7 @@
       "name": "Раки",
       "description": "Вкусное блюдо: Раки.",
       "base_price": "417.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1456,7 +1456,7 @@
       "name": "Форель",
       "description": "Вкусное блюдо: Форель.",
       "base_price": "445.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1468,7 +1468,7 @@
       "name": "Крабовые ножки",
       "description": "Вкусное блюдо: Крабовые ножки.",
       "base_price": "539.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1480,7 +1480,7 @@
       "name": "Фиш & Чипс",
       "description": "Вкусное блюдо: Фиш & Чипс.",
       "base_price": "391.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 12,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1492,7 +1492,7 @@
       "name": "Тофу стейк",
       "description": "Вкусное блюдо: Тофу стейк.",
       "base_price": "224.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1504,7 +1504,7 @@
       "name": "Гречневая лапша",
       "description": "Вкусное блюдо: Гречневая лапша.",
       "base_price": "797.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1516,7 +1516,7 @@
       "name": "Авокадо-тост",
       "description": "Вкусное блюдо: Авокадо-тост.",
       "base_price": "585.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1528,7 +1528,7 @@
       "name": "Рис с овощами",
       "description": "Вкусное блюдо: Рис с овощами.",
       "base_price": "458.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1540,7 +1540,7 @@
       "name": "Хумус",
       "description": "Вкусное блюдо: Хумус.",
       "base_price": "251.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1552,7 +1552,7 @@
       "name": "Овощные котлеты",
       "description": "Вкусное блюдо: Овощные котлеты.",
       "base_price": "535.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1564,7 +1564,7 @@
       "name": "Рататуй",
       "description": "Вкусное блюдо: Рататуй.",
       "base_price": "518.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1576,7 +1576,7 @@
       "name": "Киноа-салат",
       "description": "Вкусное блюдо: Киноа-салат.",
       "base_price": "272.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1588,7 +1588,7 @@
       "name": "Соевый гуляш",
       "description": "Вкусное блюдо: Соевый гуляш.",
       "base_price": "437.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1600,7 +1600,7 @@
       "name": "Лапша удон",
       "description": "Вкусное блюдо: Лапша удон.",
       "base_price": "406.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 13,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1612,7 +1612,7 @@
       "name": "Омлет",
       "description": "Вкусное блюдо: Омлет.",
       "base_price": "271.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1624,7 +1624,7 @@
       "name": "Каша овсяная",
       "description": "Вкусное блюдо: Каша овсяная.",
       "base_price": "471.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1636,7 +1636,7 @@
       "name": "Тосты с джемом",
       "description": "Вкусное блюдо: Тосты с джемом.",
       "base_price": "583.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1648,7 +1648,7 @@
       "name": "Яйцо Бенедикт",
       "description": "Вкусное блюдо: Яйцо Бенедикт.",
       "base_price": "560.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1660,7 +1660,7 @@
       "name": "Сырники",
       "description": "Вкусное блюдо: Сырники.",
       "base_price": "556.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1672,7 +1672,7 @@
       "name": "Панкейки",
       "description": "Вкусное блюдо: Панкейки.",
       "base_price": "233.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1684,7 +1684,7 @@
       "name": "Бекон и яйца",
       "description": "Вкусное блюдо: Бекон и яйца.",
       "base_price": "221.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1696,7 +1696,7 @@
       "name": "Французский тост",
       "description": "Вкусное блюдо: Французский тост.",
       "base_price": "210.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1708,7 +1708,7 @@
       "name": "Гранола",
       "description": "Вкусное блюдо: Гранола.",
       "base_price": "749.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }
@@ -1720,7 +1720,7 @@
       "name": "Шакшука",
       "description": "Вкусное блюдо: Шакшука.",
       "base_price": "362.00",
-      "image": "product_images/pepperoni.png",
+      "image": "product_images/1.png",
       "category": 14,
       "base_ingredients": "Различные ингредиенты."
     }

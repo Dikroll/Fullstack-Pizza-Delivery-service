@@ -3,10 +3,17 @@ import { Link } from "react-router-dom";
 import CartButton from "@/components/Cart/CartButton/CartButton";
 import logo from "@/assets/images/favicon.svg";
 import { useAuth } from "@/context/UseAuth";
-import  Userlogo  from "@/assets/images/profile.svg"; 
+import Userlogo from "@/assets/images/profile.svg"; 
+import ScrollToCategory from '@/utils/scrollToCategory';
+
 
 const NavBar = ({ categories }) => {
   const { user } = useAuth();
+
+  const scrollToCategory = ScrollToCategory();
+
+
+
 
   return (
     <header>
@@ -30,10 +37,16 @@ const NavBar = ({ categories }) => {
                   Категории
                 </span>
                 <ul className="dropdown-menu categories-dropdown" aria-labelledby="categoriesDropdown">
-                  {categories.map((category) => (
+                {categories.map((category) => (
                     <li key={category.id}>
-
-                      <a href={`#category-${category.id}`} className="dropdown-item">
+                      <a 
+                        href={`/#category-${category.id}`} 
+                        className="dropdown-item"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          scrollToCategory(category.id);
+                        }}
+                      >
                         {category.name}
                       </a>
                     </li>
