@@ -17,7 +17,7 @@ def send_email(subject, recipient_list, template_name, context=None, from_email=
         context = {}
 
     if from_email is None:
-        from_email = settings.DEFAULT_FROM_EMAIL
+        from_email = settings.EMAIL_HOST_USER
 
 
     html_message = render_to_string(template_name, context)

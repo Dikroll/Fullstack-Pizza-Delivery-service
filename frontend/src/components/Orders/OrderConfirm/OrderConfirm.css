@@ -1,6 +1,7 @@
-/* OrderConfirm.css */
+
 .confirm {
     max-width: 800px;
+    font-family: 'Gilroy';
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -15,6 +16,7 @@
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .text {
@@ -24,7 +26,7 @@
 }
 
 .status {
-    color: #ffb342;
+    color: #ffd149;
 }
 
 
@@ -50,14 +52,12 @@
     height: 20px;
     border-radius: 50%;
     background-color: #ddd;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px #ddd;
     z-index: 1;
 }
 
 .timeline-step.active .timeline-circle {
-    background-color: #ffb342;
-    box-shadow: 0 0 0 2px #ffb342;
+    background-color: #f08b2d;
+    box-shadow: rgba(240, 139, 45 0.4) 15px;
     animation: pulse 1.5s infinite ease-in-out;
 }
 

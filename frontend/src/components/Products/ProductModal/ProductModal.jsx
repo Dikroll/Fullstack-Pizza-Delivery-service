@@ -63,7 +63,7 @@ const ProductModal = ({ product, onClose }) => {
     <div className="pizzaWindowArea" ref={pizzaWindowRef} onClick={onClose}>
       <div className="pizzaWindowBody" onClick={(e) => e.stopPropagation()}>
         <div className="pizzaInfo--cancelMobileButton" onClick={onClose}>
-          Закрыть
+          ×
         </div>
         <div className="pizzaBig">
           <img src={`${config.apiUrl}${product.image_url}`} alt={product.name} />
@@ -111,7 +111,7 @@ const ProductModal = ({ product, onClose }) => {
           )}
 
           <div className="pizzaInfo--cancelButton" onClick={onClose}>
-            Отмена
+          ×
           </div>
         </div>
       </div>

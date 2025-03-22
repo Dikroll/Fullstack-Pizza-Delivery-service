@@ -3,7 +3,7 @@
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 80px; /* Увеличиваем отступ для пагинации */
+  padding-bottom: 40px;
   cursor: pointer;
 }
 
@@ -13,18 +13,17 @@
   object-fit: cover;
 }
 
-/* Контейнер для пагинации */
 .swiper-pagination {
   position: absolute;
-  bottom: -50px; /* Пагинация будет ниже изображения */
+  bottom: -50px; 
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 10px; /* Расстояние между точками */
+  gap: 10px; 
 }
 
-/* Стили для точек пагинации */
+
 .swiper-pagination-bullet {
   background-color: rgb(153, 153, 153);
   opacity: 1;
@@ -34,7 +33,7 @@
   transition: transform 0.3s, background-color 0.3s;
 }
 
-/* Стиль активной точки */
+
 .swiper-pagination-bullet-active {
   background-color: #e94a46;
   transform: scale(1.5);
