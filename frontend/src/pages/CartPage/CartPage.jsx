@@ -53,12 +53,14 @@ const CartPage = () => {
         }));
     };
 
-    const SubmitOrder = async () => {
+    const SubmitOrder = async (e) => {
+        if (e) e.preventDefault(); 
+    
         if (!user) {
             navigate('/login'); 
             return; 
         }
-
+    
         const finalOrderData = {
             ...formData,
             paymentMethod: selectedPayment,
@@ -68,16 +70,16 @@ const CartPage = () => {
                 quantity: item.quantity,
             })),
         };
-
+    
         try {
             const response = await createOrder(finalOrderData);
             const orderId = response.id;
             clearCart();
-
+    
             if (selectedPayment === 'card_online') {
-                navigate('/payment', { state: { orderId } });
+                 navigate('/payment', { state: { orderId } });
             } else {
-                navigate(`/order-success/${orderId}`);
+                 navigate(`/order-success/${orderId}`);
             }
         } catch (error) {
             setErrorMessage('Ошибка оформления заказа. Пожалуйста, попробуйте еще раз.');

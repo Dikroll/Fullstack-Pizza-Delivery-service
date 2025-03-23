@@ -7,11 +7,11 @@ class DimokUser(AbstractUser):
         ('female', 'Female'),
     ]
 
-    phone = models.CharField(max_length=15, unique=True, blank=False, null=False, verbose_name="Телефон")
-    bonus = models.PositiveIntegerField(default=300, verbose_name="Дымкоины")
-    first_name = models.CharField(max_length=30, null=False, blank=False, verbose_name="Имя")
-    birthday = models.DateField(null=True, blank=True, verbose_name="День рождения")
-    gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True, verbose_name="Пол")
+    phone = models.CharField(max_length=15, unique=True, blank=False, null=False,)
+    bonus = models.PositiveIntegerField(default=300)
+    first_name = models.CharField(max_length=30, null=False, blank=False)
+    birthday = models.DateField(null=True, blank=True)
+    gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
 
     def save(self, *args, **kwargs):
@@ -22,14 +22,10 @@ class DimokUser(AbstractUser):
     def __str__(self):
         return self.username
     
-    class Meta:
-        verbose_name="Клиенты"
-        verbose_name_plural = "Клиенты"
-    
 class EmailLog(models.Model):
-    subject = models.CharField(max_length=255, verbose_name="Тема")
-    message = models.TextField(verbose_name="Текст")
-    recipient = models.EmailField(verbose_name="Получатель")
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
+    recipient = models.EmailField()
     sent_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

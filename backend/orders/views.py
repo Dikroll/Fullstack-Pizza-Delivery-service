@@ -50,18 +50,12 @@ class OrderView(APIView):
                 quantity=cart_item.quantity,
             )
 
-        
+        cart_items.delete()
         total_price = sum(item.size.price * item.quantity for item in order.items.all())
         serializer = OrderSerializer(order)
         order_data = serializer.data
 
-        # subject = f"Подтверждение заказа #{order_data['id']}"
-        # recipient_list = [order_data['email']]
-        # template_name = "emails/order_info.html"  
-        # # context = {"order": order_data, "total_price": total_price} 
 
-        # send_email(subject, recipient_list, template_name, context)
-        cart_items.delete()
         return Response(order_data, status=status.HTTP_201_CREATED)
     
 class OrderDetailView(APIView):

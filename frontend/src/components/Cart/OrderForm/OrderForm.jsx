@@ -166,9 +166,9 @@ const OrderForm = ({ formData, onFormChange, selectedPayment, onPaymentChange, t
             <div className="total-amount">
             <h3>К оплате: {total}₽</h3>
         </div>
-        <button onClick={onSubmitOrder} className="submit-button">
-            Оформить заказ
-        </button>
+        <button onClick={(e) => onSubmitOrder(e)} className="submit-button">
+                Оформить заказ
+            </button>
 
         </form>
         

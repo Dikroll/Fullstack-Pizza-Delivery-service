@@ -62,21 +62,11 @@ class CustomTokenRefreshView(TokenRefreshView):
 
             request.data['refresh'] = refresh_token
             response = super().post(request, *args, **kwargs)
-            
-            new_access_token = response.data.get('access')
-            new_refresh_token = response.data.get('refresh')
+            access_token = response.data.get('access')
 
-            if new_access_token:
-                res = Response({'refreshed': True})
-                res.set_cookie('access_token', new_access_token, httponly=True, secure=True, samesite='Lax', path='/')
-
-                if new_refresh_token:
-                    res.set_cookie('refresh_token', new_refresh_token, httponly=True, secure=True, samesite='Lax', path='/')
-
-                return res
-            else:
-                return Response({'refreshed': False, 'error': 'No access token received'}, status=400)
-
+            res = Response({'refreshed': True})
+            res.set_cookie('access_token', access_token, httponly=True, secure=True, samesite='None', path='/')
+            return res
         except Exception as e:
             print(e)
             return Response({'refreshed': False, 'error': str(e)}, status=400)
