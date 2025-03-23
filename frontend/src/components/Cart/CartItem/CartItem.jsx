@@ -30,7 +30,7 @@ export const CartItem = ({ item }) => {
     <div className="cart-items">
       <div className="cart-item">
         <button className="remove-icon" onClick={RemoveProduct}>
-          <X size={15 />
+          <X size={15} />
         </button>
         <img
           src={`${config.apiUrl}${item.product.image_url}`}
