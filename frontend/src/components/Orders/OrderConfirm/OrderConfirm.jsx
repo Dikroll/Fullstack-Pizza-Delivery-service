@@ -4,13 +4,11 @@ import { fetchOrder } from '@/api/DataFetch';
 import { translateStatus } from '@/utils/dataTranslate';
 import './OrderConfirm.css';
 
-
 const OrderConfirm = () => {
     const { orderId } = useParams();
     const [order, setOrder] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-
 
     const getOrderStatusSteps = (currentStatus) => {
         const steps = [
@@ -20,7 +18,6 @@ const OrderConfirm = () => {
             { id: 4, status: 'delivered', label: 'Доставлено' },
         ];
 
-
         return steps.map((step) => ({
             ...step,
             active: step.status === currentStatus,
@@ -28,6 +25,8 @@ const OrderConfirm = () => {
     };
 
     useEffect(() => {
+        let interval;
+
         const getOrder = async () => {
             try {
                 const orderData = await fetchOrder(orderId);
@@ -39,21 +38,16 @@ const OrderConfirm = () => {
             }
         };
 
-        getOrder();
+        getOrder(); 
+
+        interval = setInterval(getOrder, 60000);
+
+        return () => clearInterval(interval); 
     }, [orderId]);
 
-    if (loading) {
-        return <div>Загрузка...</div>;
-    }
-
-    if (error) {
-        return <div>{error}</div>;
-    }
-
-    if (!order) {
-        return <div>Заказ не найден</div>;
-    }
-
+    if (loading) return <div>Загрузка...</div>;
+    if (error) return <div>{error}</div>;
+    if (!order) return <div>Заказ не найден</div>;
 
     const orderStatusSteps = getOrderStatusSteps(order.status);
 
@@ -64,7 +58,6 @@ const OrderConfirm = () => {
             <p className="text">
                 Статус заказа: <strong className="status">{translateStatus(order.status)}</strong>
             </p>
-
 
             <div className="timeline">
                 {orderStatusSteps.map((step, index) => (

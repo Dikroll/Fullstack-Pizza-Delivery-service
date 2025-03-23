@@ -28,6 +28,7 @@ class OrderView(APIView):
         cart_items = CartItem.objects.filter(cart=cart)
 
         order_data = request.data
+
         order = Order.objects.create(
             user=user,
             name=order_data.get('name'),
@@ -40,8 +41,10 @@ class OrderView(APIView):
             email=order_data.get('email'),
             payment_method=order_data.get('paymentMethod'),
             status='pending',
+            summary=0, 
         )
 
+        # Создаём записи товаров в заказе
         for cart_item in cart_items:
             OrderItem.objects.create(
                 order=order,
@@ -50,13 +53,17 @@ class OrderView(APIView):
                 quantity=cart_item.quantity,
             )
 
-        cart_items.delete()
+
         total_price = sum(item.size.price * item.quantity for item in order.items.all())
+
+
+        order.summary = total_price
+        order.save()
+
+        cart_items.delete()
+
         serializer = OrderSerializer(order)
-        order_data = serializer.data
-
-
-        return Response(order_data, status=status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     
 class OrderDetailView(APIView):
     def get(self, request, order_id, *args, **kwargs):

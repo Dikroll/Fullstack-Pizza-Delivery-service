@@ -31,6 +31,7 @@ class Order(models.Model):
     email = models.EmailField(blank=True, null=True)
     payment_method = models.CharField(max_length=50, choices=PAYMENT_CHOICES, verbose_name="Оплата")
     status = models.CharField(max_length=50, choices=STATUS_CHOICES, default='pending', verbose_name="Статус")
+    summary = models.DecimalField(max_digits=10, decimal_places=0, default=0, verbose_name="Сумма")
 
     def __str__(self):
         return f"Order {self.id} - User: {self.user}"
