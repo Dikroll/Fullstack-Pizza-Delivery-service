@@ -17,6 +17,7 @@
     display: flex; 
 }
 .pizzaWindowBody {
+    position: relative;
     width: 900px;
     background-color: #FFF;
     border-radius: 10px;
@@ -31,6 +32,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 .pizzaBig img {
     height: 400px;
@@ -145,10 +147,32 @@
     background-color: #32a345;
 }
 
-.pizzaInfo--cancelButton {
-    display: inline-block;
+.pizzaWindowCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
     cursor: pointer;
+    color: #333;
 }
+
+.pizzaWindowCloseButton:hover {
+    color: #48d05f;
+}
+
+
+.pizzaWindowCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+}
+
 
 .pizzaInfo--cancelMobileButton {
     display: none;

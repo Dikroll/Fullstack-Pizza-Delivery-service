@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { X } from "lucide-react";
 import { config } from "@/services/config";
 import { useCart } from "@/context/UseCart";
 import "./Product_modal.css";
@@ -9,8 +10,9 @@ const ProductModal = ({ product, onClose }) => {
   const [cartQuantity, setCartQuantity] = useState(1);
   const pizzaWindowRef = useRef(null);
 
-
-  const cartItem = cart?.find(item => item.product.id === product.id && item.size.id === selectedSize.id);
+  const cartItem = cart?.find(
+    (item) => item.product.id === product.id && item.size.id === selectedSize.id
+  );
 
   useEffect(() => {
     if (pizzaWindowRef.current) {
@@ -29,7 +31,7 @@ const ProductModal = ({ product, onClose }) => {
     } else {
       setCartQuantity(1);
     }
-  }, [cartItem, selectedSize]);  
+  }, [cartItem, selectedSize]);
 
   const SizeSelect = (size) => {
     setSelectedSize(size);
@@ -45,12 +47,12 @@ const ProductModal = ({ product, onClose }) => {
   };
 
   const QuantityChange = async (newQuantity) => {
-    if (newQuantity < 1) return;  
+    if (newQuantity < 1) return;
 
     if (cartItem) {
       try {
         await UpdateQuantity(cartItem.id, newQuantity);
-        setCartQuantity(newQuantity);  
+        setCartQuantity(newQuantity);
       } catch (error) {
         console.error("Ошибка при изменении количества:", error);
       }
@@ -62,16 +64,17 @@ const ProductModal = ({ product, onClose }) => {
   return (
     <div className="pizzaWindowArea" ref={pizzaWindowRef} onClick={onClose}>
       <div className="pizzaWindowBody" onClick={(e) => e.stopPropagation()}>
-        <div className="pizzaInfo--cancelMobileButton" onClick={onClose}>
-          ×
-        </div>
+        {/* Крестик в правом верхнем углу */}
+        <button className="pizzaWindowCloseButton" onClick={onClose}>
+          <X size={24} />
+        </button>
+
         <div className="pizzaBig">
           <img src={`${config.apiUrl}${product.image_url}`} alt={product.name} />
         </div>
         <div className="pizzaInfo">
           <h1>{product.name}</h1>
-          
-          <div className="pizzaInfo--desc">{product.description}</div>  
+          <div className="pizzaInfo--desc">{product.description}</div>
           <span>{selectedSize.grammas}</span>
           <div className="pizzaInfo--sizearea">
             <div className="pizzaInfo--sector">Размер</div>
@@ -79,10 +82,12 @@ const ProductModal = ({ product, onClose }) => {
               {product.sizes.map((size, index) => (
                 <div
                   key={index}
-                  className={`pizzaInfo--size ${selectedSize.size === size.size ? "selected" : ""}`}
+                  className={`pizzaInfo--size ${
+                    selectedSize.size === size.size ? "selected" : ""
+                  }`}
                   onClick={() => SizeSelect(size)}
                 >
-                  {size.size} 
+                  {size.size}
                 </div>
               ))}
             </div>
@@ -101,18 +106,14 @@ const ProductModal = ({ product, onClose }) => {
           </div>
 
           {cartItem ? (
-            <div className="pizzaInfo--addButton" onClick={ AddToCart}>
+            <div className="pizzaInfo--addButton" onClick={AddToCart}>
               Обновить корзину
             </div>
           ) : (
-            <div className="pizzaInfo--addButton" onClick={ AddToCart}>
+            <div className="pizzaInfo--addButton" onClick={AddToCart}>
               Добавить в корзину
             </div>
           )}
-
-          <div className="pizzaInfo--cancelButton" onClick={onClose}>
-          ×
-          </div>
         </div>
       </div>
     </div>
