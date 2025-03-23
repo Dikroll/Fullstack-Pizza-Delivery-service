@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './ProfileForm.css';
 
 const ProfileForm = ({ user, onSave }) => {
-  const [firstName, setFirstName] = useState(user.first_name);
-  const [email, setEmail] = useState(user.email);
-  const [address, setAddress] = useState(user.address);
-  const [birthday, setBirthday] = useState(user.birthday);
-  const [gender, setGender] = useState(user.gender);
+  const [firstName, setFirstName] = useState(user?.first_name || '');
+  const [email, setEmail] = useState(user?.email || '');
+  const [address, setAddress] = useState(user?.address || '');
+  const [birthday, setBirthday] = useState(user?.birthday || '');
+  const [gender, setGender] = useState(user?.gender || '');
 
   const Submit = (e) => {
     e.preventDefault();

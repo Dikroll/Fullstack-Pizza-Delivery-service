@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { validatePhone, validateEmail } from '@/utils/validateData'; 
 import './OrderForm.css';
 
-const OrderForm = ({ formData, onFormChange, selectedPayment, onPaymentChange, total }) => {
+const OrderForm = ({ formData, onFormChange, selectedPayment, onPaymentChange, total, onSubmitOrder }) => {
     const [errors, setErrors] = useState({});
 
     const exChange = (e) => {
@@ -35,6 +35,7 @@ const OrderForm = ({ formData, onFormChange, selectedPayment, onPaymentChange, t
     };
 
     return (
+        
         <form className="order-form">
             <h3>Доставка</h3>
             <div className="form-row">
@@ -165,6 +166,10 @@ const OrderForm = ({ formData, onFormChange, selectedPayment, onPaymentChange, t
             <div className="total-amount">
             <h3>К оплате: {total}₽</h3>
         </div>
+        <button onClick={onSubmitOrder} className="submit-button">
+            Оформить заказ
+        </button>
+
         </form>
         
         

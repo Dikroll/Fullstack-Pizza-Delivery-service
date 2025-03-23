@@ -1,5 +1,5 @@
 .cart-items {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.05);
 }
 .cart-item {
   display: flex;

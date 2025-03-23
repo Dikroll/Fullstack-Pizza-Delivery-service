@@ -13,10 +13,11 @@ const ProfilePage = ({ requestUser, onSaveUser }) => {
   return (
     <div className="profile-page">
       <span onClick={logoutUser}>Выйти</span>
-      <h2>Заказы</h2>
-      <OrderList></OrderList>
-      <h2>Профиль</h2>
+      
+      <h2>Личные данные</h2>
       <ProfileForm user={requestUser} onSave={onSaveUser} />
+      <h2>История заказов</h2>
+      <OrderList></OrderList>
     </div>
   );
 };

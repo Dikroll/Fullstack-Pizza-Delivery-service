@@ -36,11 +36,9 @@ const Footer = ({ categories }) => {
         </div>
 
         <div className="footer-block">
-          <h5 className="footer-title">Социальные сети</h5>
-          <ul>
-            <li><a href="https://vk.com" target="_blank" rel="noopener noreferrer" className="footer-link">ВКонтакте</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-link">Instagram</a></li>
-          </ul>
+          <h5 className="footer-title">Социальные сети</h5>          
+            <p><a href="https://vk.com" target="_blank" rel="noopener noreferrer" className="footer-link">ВКонтакте</a></p>
+            <p><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-link">Telegram</a></p> 
         </div>
       </div>
 

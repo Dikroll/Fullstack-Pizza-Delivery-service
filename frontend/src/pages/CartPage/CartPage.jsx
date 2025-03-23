@@ -7,7 +7,7 @@ import OrderForm from '@/components/Cart/OrderForm/OrderForm';
 import { createOrder } from "@/api/DataFetch"; 
 import './CartPage.css';
 
-export default function CartPage() {
+const CartPage = () => {
     const { cartItems, total, RemoveItem, clearCart } = useCart();
     const { user, loading } = useAuth(); 
     const navigate = useNavigate();
@@ -94,10 +94,7 @@ export default function CartPage() {
                     {cartItems.map((item) => (
                         <CartItem key={item.id} item={item} size={item.size} onRemove={RemoveItem} />
                     ))}
-                    <OrderForm formData={formData} onFormChange={handleFormChange} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total}/>
-                    <button onClick={SubmitOrder} className="submit-button">
-                        Оформить заказ
-                    </button>
+                    <OrderForm formData={formData} onFormChange={handleFormChange} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total} onSubmitOrder={SubmitOrder}/>
                 </div>
             ) : (
                 <p>Ваша корзина пуста</p>
@@ -105,3 +102,5 @@ export default function CartPage() {
         </div>
     );
 }
+
+export default CartPage;
