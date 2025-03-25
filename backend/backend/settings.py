@@ -10,7 +10,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dimokpizza-ivanovo.ru', '194.67.126.158', 'backend']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dimokpizza-ivanovo.ru', '31.129.57.12', 'backend']
 
 AUTH_USER_MODEL = "users.DimokUser"
 
