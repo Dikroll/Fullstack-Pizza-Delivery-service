@@ -44,7 +44,7 @@ class OrderView(APIView):
             summary=0, 
         )
 
-        # Создаём записи товаров в заказе
+
         for cart_item in cart_items:
             OrderItem.objects.create(
                 order=order,
@@ -61,6 +61,15 @@ class OrderView(APIView):
         order.save()
 
         cart_items.delete()
+
+        # email_context = {'order': order, 'user': user, 'items': list(order.items.all()),}
+        # send_email(
+        #     subject="Подтверждение заказа",
+        #     recipient_list=[order.email],
+        #     template_name="emails/order_info.html",
+        #     context=email_context,
+
+        # )
 
         serializer = OrderSerializer(order)
         return Response(serializer.data, status=status.HTTP_201_CREATED)

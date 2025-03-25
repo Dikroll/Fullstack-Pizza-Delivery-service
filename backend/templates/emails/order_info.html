@@ -77,18 +77,18 @@
                 </tr>
             </thead>
             <tbody>
-                {% for item in order.items %}
+                {% for item in items %}
                 <tr>
                     <td>{{ item.product.name }}</td>
                     <td>{{ item.size.size }}</td>
                     <td>{{ item.quantity }}</td>
-                    <td>{{ item.size.price}} руб.</td>
+                    <td>{{ item.size.price }} руб.</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
 
-        <p class="total">Итого: {{ total_price }} руб.</p>
+        <p class="total">Итого: {{ order.summary }} руб.</p>
         
         <p style="text-align: center;">С любовью,<br>Ваш Дымок</p>
     </div>

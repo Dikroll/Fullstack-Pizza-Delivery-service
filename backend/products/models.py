@@ -43,6 +43,7 @@ class Product(models.Model):
 class Promotion(models.Model):
     name = models.CharField(max_length=100, verbose_name="Название")
     image = models.ImageField(upload_to='promotions/', null=True, blank=True, verbose_name="Изображение")
+    short_description= models.TextField(verbose_name="Короткое Описание")
     description = models.TextField(verbose_name="Описание")
     created_at = models.DateTimeField(auto_now_add=True)
     

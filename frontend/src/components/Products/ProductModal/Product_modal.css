@@ -6,31 +6,51 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.5); 
-    display: none; 
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    z-index: 9999; 
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out background-color 0.3s ease-in-out;
 }
+
 .pizzaWindowArea.open {
-    display: flex; 
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Анимация появления самого окна */
 .pizzaWindowBody {
     position: relative;
     width: 900px;
+    height: 550px;
     background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #999;
     display: flex;
     margin: 20px 0px;
+    font-family: "Gilroy";
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out 0.1s, opacity 0.3s ease-in-out 0.1s;
 }
 
+.pizzaWindowArea.open .pizzaWindowBody {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
 .pizzaBig {
-    flex: 1;
+    flex: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -39,20 +59,26 @@
     width: 400px;
 }
 
+
 .pizzaInfo {
     flex: 1;
-    font-family: 'Gilroy',;
+    font-family:"Gilroy";
     padding-bottom: 50px;
+    padding-left: 40px;
 }
 
 .pizzaInfo h1 {
     margin-top: 50px;
+    text-align:left;
 }
 
 .pizzaInfo--desc {
     font-size: 15px;
     color: #999;
     margin-top: 10px;
+    word-break: normal;
+    max-width: 85%;
+    overflow: hidden;
 
 }
 
@@ -65,12 +91,12 @@
 
 .pizzaInfo--sizes {
     display: inline-flex;
-    border-radius: 10px;
+    border-radius: 24px;
     overflow: hidden;
 }
 
 .pizzaInfo--size {
-    padding: 10px 15px;
+    padding: 8px 14px;
     color: #000;
     background-color: #EEE;
     font-size: 13px;
@@ -83,8 +109,8 @@
 }
 
 .pizzaInfo--size.selected {
-    background-color: #399ade;
-    color: #FFF;
+    background-color: #ffd149;
+    color: #000000;
 }
 
 .pizzaInfo--size.selected span {
@@ -106,45 +132,64 @@
     font-size: 28px;
     margin-right: 30px;
 }
-
-.pizzaInfo--qtarea {
-    display: inline-flex;
-    background-color: #EEE;
-    border-radius: 10px;
-    height: 30px;
-}
-
-.pizzaInfo--qtarea button {
-    border: 0;
-    background-color: transparent;
-    font-size: 17px;
-    outline: 0;
+.quantity-container {
+    display: flex;
+    align-items: center;
+    border: #111 solid 1px;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 28px;
+    padding: 4px 7px;
+    gap: 10px;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+.quantity-btn {
+    background: none;
+    border: none;
     cursor: pointer;
-    padding: 0px 10px;
-    color: #333;
-}
-
-.pizzaInfo--qt {
-    line-height: 30px;
-    font-size: 12px;
+    font-size: 14px;
+    color: #111;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    padding: 0px 5px;
-    color: #000;
-}
+  }
+  
+  .quantity-value {
+    background: #e94a46;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
 
 .pizzaInfo--addButton {
     margin-top: 30px;
-    padding: 20px 30px;
-    border-radius: 20px;
-    background-color: #48d05f;
+    padding: 15px 25px;
+    border-radius: 24px;
+    background-color: #e94a46;
     color: #FFF;
     display: inline-block;
     cursor: pointer;
     margin-right: 30px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .pizzaInfo--addButton:hover {
-    background-color: #32a345;
+    background-color: #f08b2d;
+    
 }
 
 .pizzaWindowCloseButton {
@@ -155,25 +200,12 @@
     border: none;
     cursor: pointer;
     color: #333;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .pizzaWindowCloseButton:hover {
-    color: #48d05f;
+    color: #e94a46;
 }
-
-
-.pizzaWindowCloseButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-    font-size: 24px;
-}
-
-
 .pizzaInfo--cancelMobileButton {
     display: none;
     height: 40px;

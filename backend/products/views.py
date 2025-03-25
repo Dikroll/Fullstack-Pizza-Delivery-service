@@ -82,6 +82,7 @@ class PromotionListView(APIView):
             product_data = {
                 'id': promotion.id,
                 'name': promotion.name,
+                'short_description': promotion.short_description,
                 'description': promotion.description,
                 'image_url': promotion.image.url if promotion.image else None,
                 'created_at': promotion.created_at

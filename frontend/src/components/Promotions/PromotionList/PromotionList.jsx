@@ -13,6 +13,7 @@ const PromotionList = ({ promotions = [] }) => {
             <img src={`${config.apiUrl}${promotion.image_url}`} alt={promotion.name} />
             <div className="promotion-info">
               <h2>{promotion.name}</h2>
+              <p>{promotion.short_description}</p>
               <p className="promotion-date">
                 {new Date(promotion.created_at).toLocaleDateString()}
               </p>

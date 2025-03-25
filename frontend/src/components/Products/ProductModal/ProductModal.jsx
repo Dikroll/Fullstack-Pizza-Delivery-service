@@ -8,6 +8,7 @@ const ProductModal = ({ product, onClose }) => {
   const { cart, AddItem, UpdateQuantity } = useCart();
   const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
   const [cartQuantity, setCartQuantity] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
   const pizzaWindowRef = useRef(null);
 
   const cartItem = cart?.find(
@@ -15,15 +16,13 @@ const ProductModal = ({ product, onClose }) => {
   );
 
   useEffect(() => {
-    if (pizzaWindowRef.current) {
-      pizzaWindowRef.current.style.display = "flex";
-    }
-    return () => {
-      if (pizzaWindowRef.current) {
-        pizzaWindowRef.current.style.display = "none";
-      }
-    };
+    setIsOpen(true);
   }, []);
+
+  const CloseBtn = () => {
+    setIsOpen(false);
+    setTimeout(onClose, 300); 
+  };
 
   useEffect(() => {
     if (cartItem) {
@@ -33,39 +32,14 @@ const ProductModal = ({ product, onClose }) => {
     }
   }, [cartItem, selectedSize]);
 
-  const SizeSelect = (size) => {
-    setSelectedSize(size);
-  };
-
-  const AddToCart = async () => {
-    try {
-      await AddItem(product.id, selectedSize.id, cartQuantity);
-      onClose();
-    } catch (error) {
-      console.error("Ошибка при добавлении товара:", error);
-    }
-  };
-
-  const QuantityChange = async (newQuantity) => {
-    if (newQuantity < 1) return;
-
-    if (cartItem) {
-      try {
-        await UpdateQuantity(cartItem.id, newQuantity);
-        setCartQuantity(newQuantity);
-      } catch (error) {
-        console.error("Ошибка при изменении количества:", error);
-      }
-    } else {
-      setCartQuantity(newQuantity);
-    }
-  };
-
   return (
-    <div className="pizzaWindowArea" ref={pizzaWindowRef} onClick={onClose}>
+    <div
+      className={`pizzaWindowArea ${isOpen ? "open" : ""}`}
+      ref={pizzaWindowRef}
+      onClick={CloseBtn}
+    >
       <div className="pizzaWindowBody" onClick={(e) => e.stopPropagation()}>
-        {/* Крестик в правом верхнем углу */}
-        <button className="pizzaWindowCloseButton" onClick={onClose}>
+        <button className="pizzaWindowCloseButton" onClick={CloseBtn}>
           <X size={24} />
         </button>
 
@@ -74,8 +48,9 @@ const ProductModal = ({ product, onClose }) => {
         </div>
         <div className="pizzaInfo">
           <h1>{product.name}</h1>
+          <span>{selectedSize.grammas}г</span>
           <div className="pizzaInfo--desc">{product.description}</div>
-          <span>{selectedSize.grammas}</span>
+
           <div className="pizzaInfo--sizearea">
             <div className="pizzaInfo--sector">Размер</div>
             <div className="pizzaInfo--sizes">
@@ -85,7 +60,7 @@ const ProductModal = ({ product, onClose }) => {
                   className={`pizzaInfo--size ${
                     selectedSize.size === size.size ? "selected" : ""
                   }`}
-                  onClick={() => SizeSelect(size)}
+                  onClick={() => setSelectedSize(size)}
                 >
                   {size.size}
                 </div>
@@ -97,23 +72,23 @@ const ProductModal = ({ product, onClose }) => {
             <div className="pizzaInfo--sector">Цена</div>
             <div className="pizzaInfo--price">
               <div className="pizzaInfo--actualPrice">{selectedSize.price}₽</div>
-              <div className="pizzaInfo--qtarea">
-                <button onClick={() => QuantityChange(cartQuantity - 1)}>-</button>
-                <span>{cartQuantity}</span>
-                <button onClick={() => QuantityChange(cartQuantity + 1)}>+</button>
+              <div className="quantity-container">
+                <button className="quantity-btn" onClick={() => setCartQuantity(Math.max(1, cartQuantity - 1))}>-</button>
+                <span className="quantity-value">{cartQuantity}</span>
+                <button className="quantity-btn" onClick={() => setCartQuantity(cartQuantity + 1)}>+</button>
               </div>
             </div>
           </div>
 
-          {cartItem ? (
-            <div className="pizzaInfo--addButton" onClick={AddToCart}>
-              Обновить корзину
-            </div>
-          ) : (
-            <div className="pizzaInfo--addButton" onClick={AddToCart}>
-              Добавить в корзину
-            </div>
-          )}
+          <div className="pizzaInfo--addButton" onClick={async () => {
+            try {
+              await AddItem(product.id, selectedSize.id, cartQuantity);
+            } catch (error) {
+              console.error("Ошибка при добавлении товара:", error);
+            }
+          }}>
+            {cartItem ? "Обновить корзину" : "Добавить в корзину"}
+          </div>
         </div>
       </div>
     </div>

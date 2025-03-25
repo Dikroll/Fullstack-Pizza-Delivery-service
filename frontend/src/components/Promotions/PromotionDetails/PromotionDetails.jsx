@@ -29,12 +29,14 @@ const PromotionDetails = () => {
 
     return (
         <div className="promotion-details">
-            <h1 className="promotion-title">{promotion.name}</h1>
+            <h2 className="promotion-title">{promotion.name}</h2>
             <img
                 className="promotion-image"
                 src={`${config.apiUrl}${promotion.image_url}`}
                 alt={promotion.name}
             />
+            
+            <p className="promotion-description">{promotion.short_description}</p>
             <p className="promotion-description">{promotion.description}</p>
             <p className="promotion-date">
                 Дата создания: {new Date(promotion.created_at).toLocaleDateString()}
