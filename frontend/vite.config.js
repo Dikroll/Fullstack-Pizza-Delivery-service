@@ -5,8 +5,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   esbuild: {
-    target: 'esnext',
-    platform: 'linux',
+    target: 'esnext'
   },
   
   resolve: {
