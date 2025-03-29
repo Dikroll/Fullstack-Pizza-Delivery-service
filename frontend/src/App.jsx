@@ -43,7 +43,7 @@ const App = () => {
             fetchUserProfile().then(setUser),
         ])
             .catch((err) => console.error("Error:", err.message))
-            .finally(() => setTimeout(() => setLoading(false), 2000)); // Имитируем задержку загрузки
+            .finally(() => setTimeout(() => setLoading(false), 1500)); 
     }, []);
 
     const saveUser = async (updatedUser) => {

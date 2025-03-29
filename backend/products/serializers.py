@@ -31,7 +31,7 @@ class ProductSerializer(serializers.ModelSerializer):
         
         
 class PromotionSerializer(serializers.ModelSerializer):
-    image_url = serializers.SerializerMethodField()
+    image_url = serializers.ImageField(source='image', read_only=True)
 
     class Meta:
         model = Promotion
@@ -40,7 +40,7 @@ class PromotionSerializer(serializers.ModelSerializer):
     def get_image_url(self, obj):
         if obj.image:
             return obj.image.url
-        return None
+        return None 
 
 class BannerSerializer(serializers.ModelSerializer):
     promotion = PromotionSerializer(read_only=True)
