@@ -10,7 +10,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dimokpizza-ivanovo.ru', '31.129.57.12', 'backend']
+ALLOWED_HOSTS = ['localhost','dimokpizza-ivanovo.ru', '31.129.57.12', 'backend']
 
 AUTH_USER_MODEL = "users.DimokUser"
 
@@ -23,12 +23,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_redis',
     'rest_framework',
-    'rest_framework_simplejwt.token_blacklist',  
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'products',
     'users',
     'cart',
-    'orders',   
+    'orders',
 ]
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://dimokpizza-ivanovo.ru',]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'https://dimokpizza-ivanovo.ru',]
 
 ROOT_URLCONF = 'backend.urls'
 
