@@ -32,7 +32,7 @@ INSTALLED_APPS = [
 ]
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
-
+SESSION_CACHE_ALIAS = "default"
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'users.authentication.CookiesJWTAuthentication'
@@ -152,15 +152,14 @@ FILE_UPLOAD_MAX_MEMORY_SIZE = 30 * 1024 * 1024
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_NAME'),
+        'NAME': os.getenv('POSTGRES_DB'),
         'USER': os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('DJANGO_DB_HOST'),  
-        'PORT': os.getenv('DJANGO_DB_PORT')
+        'HOST': 'db',
+        'PORT': '5432',
+        'AUTOCOMMIT' : True,
     }
 }
-
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp-mail.outlook.com'
 EMAIL_PORT = 587

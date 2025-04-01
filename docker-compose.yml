@@ -1,7 +1,7 @@
 services:
   db:
     container_name: postgres_db
-    image: postgres:15-alpine
+    image: postgres
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - main_network
+      main_network:
 
   backend:
     build:
@@ -33,7 +33,7 @@ services:
     depends_on:
       - db
     networks:
-      - main_network
+      main_network:
 
   frontend:
     build:
