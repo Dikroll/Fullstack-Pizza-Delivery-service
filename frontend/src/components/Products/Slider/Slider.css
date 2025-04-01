@@ -38,3 +38,23 @@
   background-color: #e94a46;
   transform: scale(1.5);
 }
+
+@media (max-width: 991px) {
+  .slider-image {
+    height: 180px;
+
+  }
+
+  .swiper-pagination {
+    bottom: -30px; 
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.3);
+  }
+}

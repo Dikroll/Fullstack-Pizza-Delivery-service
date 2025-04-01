@@ -67,3 +67,15 @@
 .profile-form button:hover {
   background: #f08b2d;
 }
+
+
+@media (max-width: 991px) {
+  .profile-form .form-row {
+    display: block;
+    gap: 20px;
+  }
+  
+  .profile-form .form-row .form-group  {
+    width: 100%;
+  }
+}
