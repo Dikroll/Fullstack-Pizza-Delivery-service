@@ -15,7 +15,7 @@ const ProductModal = ({ product, onClose }) => {
     (item) => item.product.id === product.id && item.size.id === selectedSize.id
   );
 
-  // Рассчитываем общую цену
+
   const totalPrice = selectedSize.price * cartQuantity;
 
   useEffect(() => {
@@ -101,6 +101,7 @@ const ProductModal = ({ product, onClose }) => {
               className="pizzaInfo--addButton" 
               onClick={async (e) => {
                 e.stopPropagation();
+                setIsOpen(false)
                 try {
                   await AddItem(product.id, selectedSize.id, cartQuantity);
                 } catch (error) {

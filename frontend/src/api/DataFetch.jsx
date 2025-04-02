@@ -82,7 +82,7 @@ export const fetchOrders = async () => {
   try {
      
       const response = await axios.get(ORDERS_URL);
-      return response.data; // Возвращаем данные
+      return response.data; 
   } catch (error) {
       throw new Error(error.response?.data?.message || 'Ошибка при получении заказов');
   }

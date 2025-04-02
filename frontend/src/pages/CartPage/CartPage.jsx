@@ -40,7 +40,7 @@ const CartPage = () => {
         setSelectedPayment(e.target.value);
     };
 
-    const handleFormChange = (e) => {
+    const FormChanging = (e) => {
         const { name, value } = e.target;
 
         if (name === 'phone') {
@@ -96,7 +96,7 @@ const CartPage = () => {
                     {cartItems.map((item) => (
                         <CartItem key={item.id} item={item} size={item.size} onRemove={RemoveItem} />
                     ))}
-                    <OrderForm formData={formData} onFormChange={handleFormChange} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total} onSubmitOrder={SubmitOrder}/>
+                    <OrderForm formData={formData} onFormChange={FormChanging} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total} onSubmitOrder={SubmitOrder}/>
                 </div>
             ) : (
                 <p>Ваша корзина пуста</p>

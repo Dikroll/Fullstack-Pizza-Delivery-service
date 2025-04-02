@@ -28,7 +28,7 @@ const NavBar = ({ categories = [] }) => {
     setDesktopDropdownOpen(!desktopDropdownOpen);
   };
 
-  const handleCategoryClick = (categoryId) => {
+  const CategoryClick = (categoryId) => {
     scrollToCategory(categoryId);
     setIsMenuOpen(false);
     setMobileDropdownOpen(false);
@@ -39,7 +39,7 @@ const NavBar = ({ categories = [] }) => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          {/* Бургер-кнопка только для мобильных */}
+
           <button 
             className="navbar-toggler d-lg-none" 
             type="button" 
@@ -55,13 +55,12 @@ const NavBar = ({ categories = [] }) => {
             )}
           </button>
 
-          {/* Логотип */}
+
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="Logo" width="80" height="80" className="me-2" />
             <span className="brand-text">Dымок</span>
           </Link>
 
-          {/* Основное меню для десктопа */}
           <div className="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
             <ul className="navbar-nav me-auto">
               <li 
@@ -74,8 +73,8 @@ const NavBar = ({ categories = [] }) => {
                   id="categoriesDropdown"
                   role="button"
                 >
-                  <span>Категории</span>
-                  {desktopDropdownOpen ? <ChevronUp size={16} className="ms-1" /> : <ChevronDown size={16} className="ms-1" />}
+                  <span>Категории{desktopDropdownOpen ? <ChevronUp size={16} className="ms-1" /> : <ChevronDown size={16} className="ms-1" />}</span>
+                 
                 </div>
                 <ul 
                   className={`dropdown-menu categories-dropdown ${desktopDropdownOpen ? 'show' : ''}`} 
@@ -108,7 +107,7 @@ const NavBar = ({ categories = [] }) => {
             </ul>
           </div>
 
-          {/* Иконки пользователя и корзины */}
+
           <div className="d-flex align-items-center ms-3">
             {user ? (
               <Link to="/profile" className="profile-icon d-none d-lg-block">
@@ -154,7 +153,7 @@ const NavBar = ({ categories = [] }) => {
                         className="dropdown-item"
                         onClick={(e) => {
                           e.preventDefault();
-                          handleCategoryClick(category.id);
+                          CategoryClick(category.id);
                         }}
                       >
                         {category.name}

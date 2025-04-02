@@ -1,4 +1,4 @@
-/* Основные стили */
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -7,12 +7,12 @@
   font-family: 'Gilroy';
 }
 
-/* Навбар */
+
 header .navbar {
   background-color: #fff !important;
   width: 100%;
   padding: 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   position: fixed;
@@ -22,17 +22,17 @@ header .navbar {
 }
 
 .navbar .container {
-  max-width: 1200px;
+  max-width: 1400px;
   background-color: #fff;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 0px;
   position: relative;
 }
 
-/* Логотип и бренд */
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -43,27 +43,31 @@ header .navbar {
 .navbar-brand img {
   max-height: 60px;
   width: auto;
-  margin-right: 5px;
   -webkit-user-drag: none;
 }
 
 .brand-text {
   font-family: 'AngelicaC', sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   color: #000;
 }
 
-/* Десктопное меню */
+
 .navbar-nav {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 40px;
+  font-size: 18px;
+
+
 }
 
 .navbar-nav .nav-item {
   margin-right: 20px;
+
   position: relative;
 }
 
@@ -72,9 +76,11 @@ header .navbar {
   color: #000;
   text-decoration: none;
   display: block;
+  font-weight: 600;
+  
 }
 
-/* Десктопный dropdown */
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -114,7 +120,7 @@ header .navbar {
   -webkit-user-drag: none;
 }
 
-/* Если нужно убрать outline при фокусе */
+
 .dropdown-item:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -124,7 +130,7 @@ header .navbar {
   color: #e94a46;
 }
 
-/* Иконки пользователя и корзины */
+
 .d-flex.align-items-center {
   display: flex;
   gap: 10px;
@@ -146,7 +152,6 @@ header .navbar {
   opacity: 0.8;
 }
 
-/* Бургер-кнопка */
 .navbar-toggler {
   background: none;
   border: none;
@@ -156,7 +161,6 @@ header .navbar {
   z-index: 999;
 }
 
-/* Мобильное меню */
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
@@ -219,7 +223,7 @@ header .navbar {
   cursor: pointer;
 }
 
-/* Мобильная навигация */
+
 .mobile-nav {
   list-style: none;
   padding: 0;
@@ -323,15 +327,15 @@ header .navbar {
   }
 }
 
-/* Убираем стандартную стрелку Bootstrap */
+
 .dropdown-toggle::after {
   display: none !important;
 }
-/* Убираем стандартную стрелку Bootstrap */
+
 .dropdown-toggle::after {
   display: none !important;
 }
-/* Стили для футера сайта */
+
 .footer {
   background: #0d0d0d;
   color: #fff;
