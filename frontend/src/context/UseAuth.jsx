@@ -47,7 +47,6 @@ export const AuthProvider = ({ children }) => {
         return { success: false, message: 'Пароли не совпадают!' };
       }
       await register(first_name, email, password, confirm_password, phone, birthday, gender, address);
-      alert('User successfully registered');
       navigate('/login');
       return { success: true };
     } catch (error) {
