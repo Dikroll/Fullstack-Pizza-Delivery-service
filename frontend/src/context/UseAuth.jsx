@@ -28,10 +28,10 @@ export const AuthProvider = ({ children }) => {
         navigate('/');
         return { success: true };
       } else {
-        return { success: false, message: 'Incorrect phone number or password.' };
+        return { success: false, message: 'Неверный номер телефона или пароль.' };
       }
     } catch (error) {
-      return { success: false, message: error.response?.data?.detail || 'Unknown error occurred during login.' };
+      return { success: false, message: error.response?.data?.detail || 'Неизвестная ошибка' };
     }
   };
 
@@ -44,14 +44,14 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async (first_name, email, password, confirm_password, phone, birthday, gender, address) => {
     try {
       if (password !== confirm_password) {
-        return { success: false, message: 'Passwords do not match!' };
+        return { success: false, message: 'Пароли не совпадают!' };
       }
       await register(first_name, email, password, confirm_password, phone, birthday, gender, address);
       alert('User successfully registered');
       navigate('/login');
       return { success: true };
     } catch (error) {
-      return { success: false, message: error.response?.data?.detail || 'Unknown error occurred during registration.' };
+      return { success: false, message: error.response?.data?.detail || 'Неизвестная ошибка.' };
     }
   };
 
