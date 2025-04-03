@@ -5,6 +5,7 @@ import { useAuth } from '@/context/UseAuth';
 import { CartItem } from '@/components/Cart/CartItem/CartItem';
 import OrderForm from '@/components/Cart/OrderForm/OrderForm';
 import { createOrder } from "@/api/DataFetch"; 
+import empty from "@/assets/images/cart.svg";
 import './CartPage.css';
 
 const CartPage = () => {
@@ -99,7 +100,16 @@ const CartPage = () => {
                     <OrderForm formData={formData} onFormChange={FormChanging} selectedPayment={selectedPayment} onPaymentChange={PaymentChange} total={total} onSubmitOrder={SubmitOrder}/>
                 </div>
             ) : (
-                <p>Ваша корзина пуста</p>
+                <div className="empty">
+                    <div className="image_container">
+                        <img src={empty}/>
+                    </div>
+                    <div className="empty_info">
+                        <h3>Пока тут пусто</h3>
+                        <p>Добавьте пиццу. Или две!</p>
+                        <span>А мы доставим ваш заказ от 990 ₽</span>
+                    </div>  
+                </div>
             )}
         </div>
     );
