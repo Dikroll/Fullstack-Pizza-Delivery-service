@@ -42,5 +42,6 @@
 @media (max-width: 768px) {
     .cart-button {
         padding: 10px 15px; 
+        margin-right: 5px;
     }
 }
